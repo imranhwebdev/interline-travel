@@ -147,7 +147,7 @@
 }
 @mixin font-18 {
     font-size: 18px;
-    line-height: (27px/18px);
+    line-height: 150%;
     @include mmd {
         font-size: 16px;
     }

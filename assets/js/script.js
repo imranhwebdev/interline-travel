@@ -64,17 +64,16 @@ jQuery(function($) {
         meanRevealPosition: 'right'
     });
 
-    $(function(){
-        $('#datepicker').datepicker();
-      });
+  
 
-        // Initialize Select2 on your select element
+    // Initialize Select2 on your select element
     $('#countrySelect').select2();
 
     // Initialize Select2 on your select element
     $('#countrySelect').select2();
 
-  
+    $('.js-example-basic-single').select2();
+ 
 
    
 });
@@ -115,3 +114,10 @@ function stickyHeader() {
 window.onscroll = function() {
   stickyHeader();
 };
+
+
+
+
+$(function(){
+    $('#datepicker').datepicker();
+  });

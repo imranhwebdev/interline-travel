@@ -66,10 +66,14 @@ a {
 input,
 textarea,
 button {
-  padding: 10px 25px;
+  padding: 12px 16px;
   border: 1px solid #4F5356;
   outline: none;
   transition: all 0.3s ease-in-out;
+}
+
+.input-group-append {
+  cursor: pointer;
 }
 
 input:focus,
@@ -118,6 +122,37 @@ button {
 button:hover {
   background: transparent;
   color: #FDFE02;
+}
+
+.select2-dropdown {
+  background-color: #000;
+}
+
+.icon {
+  color: blue; /* Change color */
+  font-size: 24px; /* Change size */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: auto;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b:after {
+  position: absolute;
+  content: "\f107";
+  top: -5px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
 }
 
 .header {
@@ -272,11 +307,17 @@ button:hover {
 .hero__area .hero__content_inner .single-filter-item input, .hero__area .hero__content_inner .single-filter-item select, .hero__area .hero__content_inner .single-filter-item .select2-selection {
   background: #000;
   color: #F2F2F2;
-  border-radius: 10px;
+  border-radius: 10px !important;
   font-weight: 500;
   font-size: 14px;
   height: 45px;
   border: 1px solid #4C4C4C;
+}
+.hero__area .hero__content_inner .single-filter-item input::-moz-placeholder, .hero__area .hero__content_inner .single-filter-item select::-moz-placeholder, .hero__area .hero__content_inner .single-filter-item .select2-selection::-moz-placeholder {
+  color: #F2F2F2;
+}
+.hero__area .hero__content_inner .single-filter-item input::placeholder, .hero__area .hero__content_inner .single-filter-item select::placeholder, .hero__area .hero__content_inner .single-filter-item .select2-selection::placeholder {
+  color: #F2F2F2;
 }
 .hero__area .hero__content_inner .single-filter-item .select2-selection {
   display: flex;
@@ -294,6 +335,19 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hero__area .input-group-text {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #fff;
+}
+.hero__area .input-group-append {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
 }
 
 /*=============================
@@ -445,7 +499,7 @@ button:hover {
   padding: 20px 0;
   background: #CBCC01;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 150%;
   color: #000000;
   font-weight: 500;
 }

@@ -71,11 +71,14 @@
             input, select, .select2-selection{
                 background: #000;
                 color: $F2F2F2;
-                border-radius: 10px;
+                border-radius: 10px !important;
                 font-weight: 500;
                 font-size: 14px;
                 height: 45px;
                 border: 1px solid #4C4C4C;
+            }
+            input::placeholder, select::placeholder, .select2-selection::placeholder{
+                color: $F2F2F2;
             }
             .select2-selection{
                 display: flex;
@@ -96,6 +99,21 @@
             }
         } 
        
+    }
+    
+    & .input-group-text {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        color: #fff;
+    }
+    
+    & .input-group-append {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 38px;
     }
 }
 
