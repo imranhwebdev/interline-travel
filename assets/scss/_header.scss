@@ -1,0 +1,53 @@
+.header{
+    width: 100%;
+    transition: top 0.3s ease; 
+    .navbar-brand{
+        img{
+            width: 107px;
+        }
+    }
+    .navbar-nav{
+        li{
+            padding-left: 19px;
+            @include sm{
+                padding-left: 0;
+                border-bottom: 1px solid rgba(255,255,255, 0.1);
+
+            }
+            &:last-child{
+                @include sm{
+                    border-bottom: 0;
+    
+                }
+            }
+            a{
+                color: $F2F2F2;
+                font-size: 16px;
+                opacity: .5;
+                @include transition;
+                &.active{
+                    color: $white;
+                    opacity: 1;
+                }
+                &:hover{
+                    color: $white;
+                    opacity: 1;
+                }
+                @include sm{
+                    padding:15px 0;
+                }
+            }
+        }
+        
+    }
+    & .navbar-toggler{
+        background: $primary;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+  }
