@@ -3,7 +3,7 @@
 body {
     font-size: 16px;
     font-weight: 400;
-    line-height: (26px/16px);
+    line-height: 150%;
     color: $F2F2F2;
     background-color: $black;
     font-family:$font-1;
@@ -16,7 +16,7 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    margin: 0 0 10px;
+    margin: 0;
 }
 h2{
     @include font-32;
@@ -129,3 +129,75 @@ button{
       color: #fff;
       font-family: 'Font Awesome\ 5 Free';
   }
+
+  .backBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    width: 28px;
+    background: $_0D101A;
+    border-radius: 50%;
+    color: $white;
+    font-size: 10px;
+    &:hover{
+        color: $primary;
+    }
+  }
+
+  .boxedBtn, .inlineBtn{
+    background: $FDFE02;
+    padding:12px 16px 12px 16px;
+    color: $black;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    min-width: 125px;
+    text-align: center;
+    border-radius: 10px;
+    border:1px solid $FDFE02;
+    &:hover{
+        background: transparent;
+        color: $FDFE02;
+    }
+    @include ssm{
+        min-width: 115px;
+        padding:10px 14px 10px 14px;
+
+    }
+  }
+  .inlineBtn{
+    background: transparent;
+    color: $FDFE02;
+    border-color: #4F5255;
+    &:hover{
+        background: $FDFE02;
+        color: $black;
+        border-color: $FDFE02;
+    }
+  }
+
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.accordion-button:focus,
+button:focus,
+.uneditable-input:focus{
+  border-color: transparent !important ;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}

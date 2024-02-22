@@ -2,7 +2,7 @@
 body {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.625;
+  line-height: 150%;
   color: #F2F2F2;
   background-color: #000000;
   font-family: "DM Sans", sans-serif;
@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0;
 }
 
 h2 {
@@ -155,9 +155,82 @@ button:hover {
   font-family: "Font Awesome 5 Free";
 }
 
+.backBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  background: #0D101A;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+}
+.backBtn:hover {
+  color: #CBCC01;
+}
+
+.boxedBtn, .inlineBtn {
+  background: #FDFE02;
+  padding: 12px 16px 12px 16px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  min-width: 125px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #FDFE02;
+}
+.boxedBtn:hover, .inlineBtn:hover {
+  background: transparent;
+  color: #FDFE02;
+}
+@media only screen and (max-width: 479px) {
+  .boxedBtn, .inlineBtn {
+    min-width: 115px;
+    padding: 10px 14px 10px 14px;
+  }
+}
+
+.inlineBtn {
+  background: transparent;
+  color: #FDFE02;
+  border-color: #4F5255;
+}
+.inlineBtn:hover {
+  background: #FDFE02;
+  color: #000000;
+  border-color: #FDFE02;
+}
+
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus,
+.accordion-button:focus,
+button:focus,
+.uneditable-input:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
 .header {
   width: 100%;
   transition: top 0.3s ease;
+  border-bottom: 1px solid rgba(242, 242, 242, 0.2);
 }
 .header .navbar-brand img {
   width: 107px;
@@ -493,6 +566,158 @@ button:hover {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+/*======================================
+======= Service Details Area Css =======
+========================================*/
+.pageTop {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.serviceDetailsTable .sDTInner {
+  background: #0D101A;
+  padding: 20px 16px;
+}
+.serviceDetailsTable .sDTInner table {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 479px) {
+  .serviceDetailsTable .sDTInner table {
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+.serviceDetailsTable .sDTInner table .table > thead tr th {
+  border: 0;
+  font-size: 12px;
+}
+.serviceDetailsTable .sDTInner table thead tr {
+  background: #1B1E19;
+  border-radius: 10px !important;
+}
+.serviceDetailsTable .sDTInner table th {
+  padding: 16px 14px;
+}
+.serviceDetailsTable .sDTInner table td {
+  padding: 16px 14px;
+}
+.serviceDetailsTable .sDTInner table td img {
+  margin-right: 8px;
+  max-width: 16px;
+}
+.serviceDetailsTable .sDTInner table td i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.serviceDetailsTable .sDTInner table thead th {
+  border: 0;
+}
+
+.serviceDetailsTable .sDTInner table td, .serviceDetailsTable .sDTInner table tr {
+  border-color: #4F5255;
+}
+
+/* Swipper Slider Css */
+.serviceDetailsSliderFaq {
+  padding-bottom: 30px !important;
+}
+.serviceDetailsSliderFaq .swiper-button-next, .serviceDetailsSliderFaq .swiper-button-prev {
+  opacity: 0;
+  visibility: hidden;
+}
+.serviceDetailsSliderFaq .mySwiper2 {
+  height: auto;
+  width: 100%;
+}
+.serviceDetailsSliderFaq .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.serviceDetailsSliderFaq .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.serviceDetailsSliderFaq .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.serviceDetailsSliderFaq .mySwiper2 {
+  height: auto;
+  width: 100%;
+}
+.serviceDetailsSliderFaq .mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  border-radius: 16px !important;
+}
+.serviceDetailsSliderFaq .mySwiper .swiper-slide {
+  width: 50px !important;
+  height: 50px;
+  opacity: 0.4;
+}
+.serviceDetailsSliderFaq .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.serviceDetailsSliderFaq .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+.serviceDetailsSliderFaq .serviceDS .swiper-wrapper {
+  height: 353px !important;
+}
+.serviceDetailsSliderFaq .swiper-watch-progress .swiper-wrapper {
+  justify-content: center;
+}
+.serviceDetailsSliderFaq .swiper-watch-progress .swiper-wrapper .swiper-slide img {
+  border-radius: 8px;
+  cursor: pointer;
+}
+.serviceDetailsSliderFaq .swiper-watch-progress .swiper-wrapper .swiper-slide-thumb-active {
+  border: 1px solid #FDFE02;
+  border-radius: 8px;
+}
+.serviceDetailsSliderFaq .accordion-item {
+  background: #0D101A;
+  margin-bottom: 16px;
+  border: 0;
+  padding: 16px 20px;
+  border-radius: 8px;
+}
+.serviceDetailsSliderFaq .accordion-item .accordion-body {
+  color: rgba(242, 242, 242, 0.7);
+  border: 0 !important;
+  padding: 12px 0;
+  font-size: 14px;
+  border-top: 1px solid #303238 !important;
+  margin-top: 12px;
+}
+.serviceDetailsSliderFaq .accordion-item .accordion-button {
+  padding: 0 !important;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f3f3f3;
+  line-height: 150% !important;
+  box-shadow: 0 0 0 !important;
+}
+.serviceDetailsSliderFaq .accordion-item .accordion-button::after {
+  background-image: url("../img/icons/arrow-down.svg");
 }
 
 .footer {
