@@ -227,6 +227,10 @@ button:focus,
   outline: 0 none !important;
 }
 
+.boxedBtn.large {
+  min-width: 200px;
+}
+
 .header {
   width: 100%;
   transition: top 0.3s ease;
@@ -718,6 +722,88 @@ button:focus,
 }
 .serviceDetailsSliderFaq .accordion-item .accordion-button::after {
   background-image: url("../img/icons/arrow-down.svg");
+}
+
+/*======================================
+========== Trabellers Area Css =========
+========================================*/
+.stepForm {
+  padding-bottom: 200px;
+}
+.stepForm .stepForm-wrapper {
+  background: #0D101A;
+  border-radius: 8px;
+}
+.stepForm .stepForm-wrapper .stepFTop {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  max-width: 670px;
+  margin: 0 auto;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem .step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000000;
+  border: 1px solid #4F5255;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem .step-icon span {
+  position: absolute;
+  right: -50%;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active .step-icon {
+  background: #FDFE02;
+}
+.stepForm .stepForm-wrapper .stepFBottom {
+  border-top: 1px solid #4F5255;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.stepForm .stepForm-wrapper .stepFBottom .boxedBtn {
+  margin-top: 100px;
+  display: inline-block;
+}
+.stepForm .stepForm-wrapper .mainCount {
+  background: #000000;
+  padding: 8px;
+  border-radius: 28px;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #F2F2F2;
+}
+.stepForm .stepForm-wrapper .mainCount button {
+  background: transparent;
+  border: 1px solid #4F5255 !important;
+  color: #FDFE02;
+  width: 37px !important;
+  height: 37px !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.stepForm .stepForm-wrapper .mainCount button:hover {
+  border-color: #CBCC01 !important;
+}
+
+.count-minmax {
+  width: 333px;
+  justify-content: space-between !important;
+  margin: 20px auto 20px;
 }
 
 .footer {
