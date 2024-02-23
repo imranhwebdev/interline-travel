@@ -1,15 +1,8 @@
 jQuery(function($) {
     "use strict";
 
-
-
     // Initialize Select2 on your select element
-    $('#countrySelect').select2();
-
-    // Initialize Select2 on your select element
-    $('#countrySelect').select2();
-
-    $('.js-example-basic-single').select2();
+    $('select').select2();
 
 
 

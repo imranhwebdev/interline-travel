@@ -134,24 +134,32 @@ button:hover {
 }
 
 .backBtn {
+  --width: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 28px;
-  width: 28px;
+  height: var(--width);
+  width: var(--width);
   background: #0D101A;
   border-radius: 50%;
   color: #fff;
   font-size: 10px;
 }
+@media only screen and (max-width: 767px) {
+  .backBtn {
+    --width: 40px;
+    font-size: 14px;
+  }
+}
 .backBtn:hover {
-  color: #CBCC01;
+  color: #000000;
+  background-color: #CBCC01;
 }
 
 .boxedBtn,
 .inlineBtn {
   background: #FDFE02;
-  padding: 12px 16px 12px 16px;
+  padding: 10px 15px;
   color: #000000;
   font-weight: 500;
   font-size: 14px;
@@ -169,8 +177,8 @@ button:hover {
 @media only screen and (max-width: 479px) {
   .boxedBtn,
   .inlineBtn {
-    min-width: 115px;
-    padding: 10px 14px 10px 14px;
+    min-width: 80px;
+    padding: 8px 14px;
   }
 }
 
@@ -212,6 +220,12 @@ button:focus,
   min-width: 200px;
   text-transform: capitalize;
   display: inline-block;
+}
+@media only screen and (max-width: 479px) {
+  .boxedBtn.large,
+  .inlineBtn.large {
+    min-width: 100px;
+  }
 }
 
 .stepForm-wrapper .stepFTop .stepItem h5 {
@@ -361,7 +375,7 @@ button:focus,
   z-index: 9;
 }
 .header-clear {
-  height: 58px;
+  height: 70px;
 }
 .header .navbar {
   --bs-navbar-toggler-padding-x: 6px;
@@ -451,19 +465,30 @@ button:focus,
 ======= Service Details Area Css =======
 ========================================*/
 .pageTop {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
+}
+@media only screen and (max-width: 991px) {
+  .pageTop {
+    padding: 24px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pageTop .backDetails h4 {
+    display: none;
+  }
 }
 
 .serviceDetailsTable .sDTInner {
   background: #0D101A;
   padding: 20px 16px;
+  border-radius: 1rem;
 }
 .serviceDetailsTable .sDTInner table {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 0;
+  table-layout: fixed;
 }
 @media only screen and (max-width: 479px) {
   .serviceDetailsTable .sDTInner table {
@@ -475,30 +500,35 @@ button:focus,
   border: 0;
   font-size: 12px;
 }
-.serviceDetailsTable .sDTInner table thead tr {
-  background: #1B1E19;
-  border-radius: 10px !important;
-}
 .serviceDetailsTable .sDTInner table th {
-  padding: 16px 14px;
+  --radius: 8px;
+  background: #1B1E19;
 }
-.serviceDetailsTable .sDTInner table td {
-  padding: 16px 14px;
+.serviceDetailsTable .sDTInner table th:first-child {
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
-.serviceDetailsTable .sDTInner table td img {
+.serviceDetailsTable .sDTInner table th:last-child {
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.serviceDetailsTable .sDTInner table td, .serviceDetailsTable .sDTInner table th {
+  padding: 14px 16px;
+}
+@media only screen and (max-width: 767px) {
+  .serviceDetailsTable .sDTInner table td, .serviceDetailsTable .sDTInner table th {
+    padding: 12px 15px;
+  }
+}
+.serviceDetailsTable .sDTInner table td img, .serviceDetailsTable .sDTInner table th img {
   margin-right: 8px;
   max-width: 16px;
 }
-.serviceDetailsTable .sDTInner table td i {
+.serviceDetailsTable .sDTInner table td i, .serviceDetailsTable .sDTInner table th i {
   margin-right: 8px;
   font-size: 14px;
 }
 
-.serviceDetailsTable .sDTInner table thead th {
-  border: 0;
-}
-
-.serviceDetailsTable .sDTInner table td,
 .serviceDetailsTable .sDTInner table tr {
   border-color: #4F5255;
 }
@@ -563,6 +593,7 @@ button:focus,
   height: 353px !important;
 }
 .serviceDetailsSliderFaq .swiper-watch-progress .swiper-wrapper {
+  height: auto;
   justify-content: center;
 }
 .serviceDetailsSliderFaq .swiper-watch-progress .swiper-wrapper .swiper-slide img {
@@ -580,7 +611,7 @@ button:focus,
   padding: 16px 20px;
   border-radius: 8px;
 }
-.serviceDetailsSliderFaq .accordion-item .accordion-body {
+.serviceDetailsSliderFaq .accordion-body {
   color: rgba(242, 242, 242, 0.7);
   border: 0 !important;
   padding: 12px 0;
@@ -588,7 +619,7 @@ button:focus,
   border-top: 1px solid #303238 !important;
   margin-top: 12px;
 }
-.serviceDetailsSliderFaq .accordion-item .accordion-button {
+.serviceDetailsSliderFaq .accordion-button {
   padding: 0 !important;
   background: transparent;
   font-size: 16px;
@@ -596,8 +627,9 @@ button:focus,
   color: #f3f3f3;
   line-height: 150% !important;
   box-shadow: 0 0 0 !important;
+  --bs-accordion-btn-icon-width: 1rem;
 }
-.serviceDetailsSliderFaq .accordion-item .accordion-button::after {
+.serviceDetailsSliderFaq .accordion-button::after {
   background-image: url("../img/icons/arrow-down.svg");
 }
 
@@ -605,39 +637,60 @@ button:focus,
 ========== Travelers Area Css =========
 ========================================*/
 .stepForm {
-  padding-bottom: 200px;
+  min-height: 73vh;
+  padding-bottom: 50px;
 }
-.stepForm .stepForm-wrapper {
-  background: #0D101A;
-  border-radius: 8px;
-}
-.stepForm .stepForm-wrapper .stepFTop {
+.stepForm .stepFTop {
   padding-top: 40px;
   padding-bottom: 20px;
   max-width: 670px;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
 }
-.stepForm .stepForm-wrapper .stepFTop::before {
-  position: absolute;
-  content: "";
-  left: 7%;
-  top: 45.7%;
-  width: 89%;
-  height: 2px;
-  background: #fff;
-  z-index: -1;
+@media only screen and (max-width: 767px) {
+  .stepForm .stepFTop {
+    max-width: 100%;
+    overflow-y: hidden;
+  }
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem {
+.stepForm .stepFTop .stepItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 13px;
   font-size: 16px;
   font-weight: 500;
+  position: relative;
+  z-index: 1;
+  width: 20%;
+  flex: 0 0 auto;
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem .step-icon {
+@media only screen and (max-width: 767px) {
+  .stepForm .stepFTop .stepItem {
+    width: 132px;
+  }
+}
+.stepForm .stepFTop .stepItem::after, .stepForm .stepFTop .stepItem::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 4px;
+  transform: translateY(-50%);
+  height: 1px;
+  width: calc(50% + 1px);
+  background-color: #4F5255;
+  z-index: -1;
+}
+.stepForm .stepFTop .stepItem::after {
+  left: auto;
+  right: -4px;
+}
+.stepForm .stepFTop .stepItem:first-child::before {
+  display: none;
+}
+.stepForm .stepFTop .stepItem:last-child::after {
+  display: none;
+}
+.stepForm .stepFTop .stepItem .step-icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -648,56 +701,82 @@ button:focus,
   justify-content: center;
   position: relative;
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem .step-icon span {
+.stepForm .stepFTop .stepItem .step-icon span {
   position: absolute;
   right: -150%;
+  color: #fff;
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem:last-child .step-icon span {
-  display: none;
-}
-.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active {
+.stepForm .stepFTop .stepItem.passed {
   position: relative;
   z-index: 1;
+  --active-color: #7FFE02;
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active::before {
-  position: absolute;
-  content: "";
-  left: 38%;
-  top: 28%;
-  width: 110%;
-  height: 2px;
-  background: #7FFE02;
-  z-index: -1;
+.stepForm .stepFTop .stepItem.passed::before, .stepForm .stepFTop .stepItem.passed::after {
+  background-color: var(--active-color);
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active .step-icon {
-  background: #7FFE02;
+.stepForm .stepFTop .stepItem.passed .step-icon {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+  color: #000000;
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(2)::before {
-  left: -90%;
-  width: 275%;
+.stepForm .stepFTop .stepItem.passed .step-icon span {
+  color: var(--active-color);
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(3)::before {
-  left: -50%;
-  width: 185%;
+.stepForm .stepFTop .stepItem.active {
+  position: relative;
+  z-index: 1;
+  --active-color: #FDFE02;
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(4)::before {
-  left: -70%;
-  width: 220%;
+.stepForm .stepFTop .stepItem.active::before, .stepForm .stepFTop .stepItem.active::after {
+  background-color: var(--active-color);
 }
-.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(5)::before {
-  left: -100%;
-  width: 120%;
+.stepForm .stepFTop .stepItem.active .step-icon {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+  color: #000000;
+}
+.stepForm .stepFTop .stepItem.active .step-icon span {
+  color: var(--active-color);
+}
+.stepForm .stepForm-wrapper {
+  background: #0D101A;
+  border-radius: 8px;
 }
 .stepForm .stepForm-wrapper .stepFBottom {
   border-top: 1px solid #4F5255;
-  padding-top: 24px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  --padding: 40px;
+  --padding-top: 24px;
+  padding: var(--padding);
+  padding-top: var(--padding-top);
 }
-.stepForm .stepForm-wrapper .stepFBottom .boxedBtn {
+@media only screen and (max-width: 767px) {
+  .stepForm .stepForm-wrapper .stepFBottom {
+    --padding: 24px;
+    --padding-top: 18px;
+  }
+}
+.stepForm .stepForm-wrapper .backNextBtns {
   margin-top: 100px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+  .stepForm .stepForm-wrapper .backNextBtns {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .stepForm .stepForm-wrapper .backNextBtns {
+    margin-top: 34px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .stepForm .stepForm-wrapper .backNextBtns {
+    margin-top: 30px;
+    gap: 1rem;
+  }
 }
 .stepForm .stepForm-wrapper .mainCount {
   background: #000000;
@@ -719,9 +798,13 @@ button:focus,
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  font-size: 1rem;
 }
 .stepForm .stepForm-wrapper .mainCount button:hover {
   border-color: #CBCC01 !important;
+}
+.stepForm .stepForm-wrapper .mainCount .count {
+  min-width: 15px;
 }
 
 .count-minmax {
@@ -729,14 +812,21 @@ button:focus,
   justify-content: space-between !important;
   margin: 20px auto 20px;
 }
+@media only screen and (max-width: 767px) {
+  .count-minmax {
+    width: 100%;
+  }
+}
 
-.stepItem.active i {
-  color: #000000;
+@media only screen and (max-width: 479px) {
+  .stepSelectBed-wrapper .col-6 {
+    width: 100%;
+  }
 }
 
 .single-bed-item {
   border: 1px solid #4F5255;
-  display: inline-block;
+  display: block;
   padding: 16px;
   border-radius: 8px;
 }
@@ -753,6 +843,7 @@ button:focus,
 .single-bed-item img {
   border-radius: 8px;
   max-width: 221px;
+  width: 100%;
 }
 
 /*=========================================
