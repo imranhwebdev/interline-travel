@@ -44,6 +44,7 @@
         border-radius: 8px;
         color: $F2F2F2B2_70;
         height: 73px;
+        resize: none;
     }
     textarea::placeholder{
         color: $F2F2F2B2_70;
@@ -56,4 +57,34 @@
 }
 .stepFBottom{
     border-bottom:1px solid #4F5255;
+}
+
+.privacy-policy{
+    padding-top: 39px;
+    padding-bottom: 80px;
+    max-width: 460px;
+    margin:0 auto;
+    figure{
+        margin-top: 16px;
+        display: inline-block;
+        img{
+            border-radius: 4px;
+        }
+    }
+    .form-check{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        cursor: pointer;
+        input{
+            padding: 0;
+            margin-top: -2px;
+            cursor: pointer;
+        }
+        .form-check-input:checked[type=checkbox] {
+            background-image: url('../img/checkbx.png');
+            background-color: #FDFE02;
+        }
+    }
 }
