@@ -24,4 +24,104 @@
             display: none;
         }
     }
+    &-dropdown {
+        background-color: $_0D101A;
+        border-color: $border;
+    }
+    &-search {
+        &__field {
+            background-color: transparent !important;
+            border-radius: 4px;
+            border-color: rgba($color: $border, $alpha: 1) !important;
+            color: $white;
+            padding: 4px 8px !important;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    &-results {
+        &__options {
+            @include custom-scrollbar(8px,
+            1px);
+        }
+        &__option {
+            padding: 6px 10px;
+            &--selected,
+            &--highlighted {
+                background-color: $primary !important;
+                color: $black !important;
+            }
+        }
+    }
+}
+
+// datePicker
+.datepicker {
+    &-dropdown {
+        background-color: $black;
+        padding: 10px;
+        border-radius: 12px;
+    }
+    & td,
+    & th {
+        --width: 36px;
+        width: var(--width);
+        height: var(--width);
+        color: rgba($color: $F2F2F2, $alpha: .80);
+        border-radius: 8px;
+        font-size: 14px;
+        &.day {
+            &.old,
+            &.new {
+                color: rgba($color: $F2F2F2, $alpha: .40);
+            }
+            &:hover,
+            &.active,
+            &.today {
+                background-color: $primary !important;
+                color: $black !important;
+                font-weight: 600 !important;
+                text-shadow: none !important;
+                background-image: none !important;
+            }
+        }
+    }
+    & .year,
+    & .decade,
+    & .century,
+    & .month {
+        --width: 46px;
+        width: var(--width);
+        height: var(--width);
+        color: rgba($color: $F2F2F2, $alpha: .80);
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 45px;
+        &.focused,
+        &.active,
+        &:hover {
+            background-color: $primary !important;
+            color: $black !important;
+            font-weight: 600;
+            background-image: none !important;
+        }
+    }
+    &-switch,
+    & .prev,
+    & .next {
+        &:hover {
+            background-color: $primary !important;
+            color: $black !important;
+        }
+    }
+    &-orient {
+        &-top::after,
+        &-top::before {
+            border-top-color: $black !important;
+        }
+        &-bottom::after,
+        &-bottom::before {
+            border-bottom-color: $black !important;
+        }
+    }
 }
