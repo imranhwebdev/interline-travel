@@ -204,6 +204,8 @@ button:focus,
 
 
 
-.boxedBtn.large{
+.boxedBtn.large, .inlineBtn.large{
     min-width: 200px;
+    text-transform: capitalize;
+    display: inline-block;
 }
