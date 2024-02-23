@@ -748,7 +748,7 @@ button:focus,
   position: absolute;
   content: "";
   left: 10%;
-  top: 43%;
+  top: 44%;
   width: 85%;
   height: 2px;
   background: #fff;
@@ -788,7 +788,7 @@ button:focus,
   position: absolute;
   content: "";
   left: 38%;
-  top: 25%;
+  top: 26%;
   width: 85%;
   height: 2px;
   background: #FDFE02;
@@ -796,6 +796,22 @@ button:focus,
 }
 .stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active .step-icon {
   background: #FDFE02;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(2)::before {
+  left: -50%;
+  width: 200%;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(3)::before {
+  left: -50%;
+  width: 165%;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(4)::before {
+  left: -50%;
+  width: 165%;
+}
+.stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(5)::before {
+  left: -50%;
+  width: 120%;
 }
 .stepForm .stepForm-wrapper .stepFBottom {
   border-top: 1px solid #4F5255;
