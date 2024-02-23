@@ -56,7 +56,15 @@ window.onscroll = function() {
 
 
 $(function() {
-    $('#datepicker').datepicker();
+    $('#datepicker').datepicker({
+        todayHighlight: true,
+        autoclose: true,
+        templates: {
+            leftArrow: '<i class="fa fa-angle-left"></i>',
+            rightArrow: '<i class="fa fa-angle-right"></i>'
+        },
+        format: 'M/D'
+    });
 });
 
 

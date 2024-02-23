@@ -126,37 +126,11 @@ button:hover {
   color: #FDFE02;
 }
 
-.select2-dropdown {
-  background-color: #000;
-}
-
 .icon {
   color: blue;
   /* Change color */
   font-size: 24px;
   /* Change size */
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-  border: 0;
-  position: relative;
-  z-index: 1;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: auto;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow b:after {
-  position: absolute;
-  content: "\f107";
-  top: -5px;
-  right: 0;
-  width: 12px;
-  height: 12px;
-  font-size: 20px;
-  color: #fff;
-  font-family: "Font Awesome 5 Free";
 }
 
 .backBtn {
@@ -293,6 +267,88 @@ button:focus,
 }
 .select2-selection__arrow {
   display: none;
+}
+.select2-dropdown {
+  background-color: #0D101A;
+  border-color: #4F5356;
+}
+.select2-search__field {
+  background-color: transparent !important;
+  border-radius: 4px;
+  border-color: #4f5356 !important;
+  color: #fff;
+  padding: 4px 8px !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.select2-results__options::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.select2-results__options::-webkit-scrollbar-track {
+  background-color: #000000;
+  border-radius: 20px;
+}
+.select2-results__options::-webkit-scrollbar-thumb {
+  background-color: #CBCC01;
+  border-radius: 20px;
+  border: 1px solid #000000;
+}
+.select2-results__option {
+  padding: 6px 10px;
+}
+.select2-results__option--selected, .select2-results__option--highlighted {
+  background-color: #CBCC01 !important;
+  color: #000000 !important;
+}
+
+.datepicker-dropdown {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 12px;
+}
+.datepicker td, .datepicker th {
+  --width: 36px;
+  width: var(--width);
+  height: var(--width);
+  color: rgba(242, 242, 242, 0.8);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.datepicker td.day.old, .datepicker td.day.new, .datepicker th.day.old, .datepicker th.day.new {
+  color: rgba(242, 242, 242, 0.4);
+}
+.datepicker td.day:hover, .datepicker td.day.active, .datepicker td.day.today, .datepicker th.day:hover, .datepicker th.day.active, .datepicker th.day.today {
+  background-color: #CBCC01 !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+  background-image: none !important;
+}
+.datepicker .year, .datepicker .decade, .datepicker .century, .datepicker .month {
+  --width: 46px;
+  width: var(--width);
+  height: var(--width);
+  color: rgba(242, 242, 242, 0.8);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 45px;
+}
+.datepicker .year.focused, .datepicker .year.active, .datepicker .year:hover, .datepicker .decade.focused, .datepicker .decade.active, .datepicker .decade:hover, .datepicker .century.focused, .datepicker .century.active, .datepicker .century:hover, .datepicker .month.focused, .datepicker .month.active, .datepicker .month:hover {
+  background-color: #CBCC01 !important;
+  color: #000000 !important;
+  font-weight: 600;
+  background-image: none !important;
+}
+.datepicker-switch:hover, .datepicker .prev:hover, .datepicker .next:hover {
+  background-color: #CBCC01 !important;
+  color: #000000 !important;
+}
+.datepicker-orient-top::after, .datepicker-orient-top::before {
+  border-top-color: #000000 !important;
+}
+.datepicker-orient-bottom::after, .datepicker-orient-bottom::before {
+  border-bottom-color: #000000 !important;
 }
 
 .header {
@@ -973,6 +1029,9 @@ button:focus,
 }
 .hero__content_inner .single-filter-item .select2-selection__rendered {
   color: #F2F2F2;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
 }
 .hero__content_inner .single-filter-item button {
   height: 45px;

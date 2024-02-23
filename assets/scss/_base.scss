@@ -111,37 +111,11 @@ button {
     }
 }
 
-.select2-dropdown {
-    background-color: #000;
-}
-
 .icon {
     color: blue;
     /* Change color */
     font-size: 24px;
     /* Change size */
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border: 0;
-    position: relative;
-    z-index: 1;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: auto;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow b:after {
-    position: absolute;
-    content: "\f107";
-    top: -5px;
-    right: 0;
-    width: 12px;
-    height: 12px;
-    font-size: 20px;
-    color: #fff;
-    font-family: 'Font Awesome\ 5 Free';
 }
 
 .backBtn {
