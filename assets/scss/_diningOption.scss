@@ -1,13 +1,13 @@
-.chooseDOption{
+.chooseDOption {
     gap: 20px;
-    .from-control{
+    .from-control {
         width: 100%;
-        label{
+        label {
             font-size: 14px;
             margin-bottom: 8px;
         }
     }
-    .select2-container--default{
+    .select2-container--default {
         width: 100% !important;
         background: transparent !important;
         color: #F2F2F2;
@@ -16,36 +16,36 @@
         font-size: 14px;
         height: 45px;
     }
-    .select2-container--default .select2-selection--single{
+    .select2-container--default .select2-selection--single {
         background: transparent;
         height: 100%;
         display: flex;
         align-items: center;
         border-radius: 8px;
         border-color: #4F5255;
-        .select2-selection__rendered{
+        .select2-selection__rendered {
             color: $F2F2F2B2_70;
             padding-left: 12px;
         }
     }
 }
 
-.diningFTitle{
+.diningFTitle {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 18px;
     text-transform: capitalize;
 }
 
-.diningOption-right{
-    textarea{
+.diningOption-right {
+    textarea {
         width: 100%;
         background: transparent;
         border-radius: 8px;
         color: $F2F2F2B2_70;
         height: 73px;
     }
-    textarea::placeholder{
+    textarea::placeholder {
         color: $F2F2F2B2_70;
         font-style: italic;
     }
@@ -53,7 +53,4 @@
 
 .backNextBtns {
     text-align: center;
-}
-.stepFBottom{
-    border-bottom:1px solid #4F5255;
 }
