@@ -209,3 +209,27 @@ button:focus,
     text-transform: capitalize;
     display: inline-block;
 }
+
+.stepForm-wrapper{
+    .stepFTop{
+        .stepItem{
+            h5{
+                font-size: 16px;
+                font-weight: 500;
+                color: $F2F2F2B2_70;
+            }
+            &.active h5{
+                color: $white;
+            }
+        }
+    }
+}
+.p-20{
+    padding: 20px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.formTitle{
+    margin-bottom: 20px;
+}

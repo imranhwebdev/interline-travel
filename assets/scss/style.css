@@ -233,6 +233,27 @@ button:focus,
   display: inline-block;
 }
 
+.stepForm-wrapper .stepFTop .stepItem h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(242, 242, 242, 0.7);
+}
+.stepForm-wrapper .stepFTop .stepItem.active h5 {
+  color: #fff;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.formTitle {
+  margin-bottom: 20px;
+}
+
 .header {
   width: 100%;
   transition: top 0.3s ease;
@@ -747,9 +768,9 @@ button:focus,
 .stepForm .stepForm-wrapper .stepFTop::before {
   position: absolute;
   content: "";
-  left: 10%;
-  top: 44%;
-  width: 85%;
+  left: 7%;
+  top: 45.7%;
+  width: 89%;
   height: 2px;
   background: #fff;
   z-index: -1;
@@ -788,29 +809,29 @@ button:focus,
   position: absolute;
   content: "";
   left: 38%;
-  top: 26%;
-  width: 85%;
+  top: 28%;
+  width: 110%;
   height: 2px;
-  background: #FDFE02;
+  background: #7FFE02;
   z-index: -1;
 }
 .stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active .step-icon {
-  background: #FDFE02;
+  background: #7FFE02;
 }
 .stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(2)::before {
-  left: -50%;
-  width: 200%;
+  left: -90%;
+  width: 275%;
 }
 .stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(3)::before {
   left: -50%;
-  width: 165%;
+  width: 185%;
 }
 .stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(4)::before {
-  left: -50%;
-  width: 165%;
+  left: -70%;
+  width: 220%;
 }
 .stepForm .stepForm-wrapper .stepFTop .stepItem.stepItem.active:nth-child(5)::before {
-  left: -50%;
+  left: -100%;
   width: 120%;
 }
 .stepForm .stepForm-wrapper .stepFBottom {
@@ -878,6 +899,14 @@ button:focus,
 .single-bed-item img {
   border-radius: 8px;
   max-width: 221px;
+}
+
+/*=========================================
+========== PassengerForm Area Css =========
+===========================================*/
+.passengerForm-box {
+  background: #000000;
+  border-radius: 16px;
 }
 
 .footer {

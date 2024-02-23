@@ -403,9 +403,9 @@
             &::before{
                 position: absolute;
                 content: "";
-                left: 10%;
-                top: 44%;
-                width: 85%;
+                left: 7%;
+                top: 45.7%;
+                width: 89%;
                 height: 2px;
                 background: #fff;
                 z-index: -1;
@@ -446,37 +446,37 @@
                         position: absolute;
                         content: "";
                         left: 38%;
-                        top: 26%;
-                        width: 85%;
+                        top: 28%;
+                        width: 110%;
                         height: 2px;
-                        background: #FDFE02;
+                        background: #7FFE02;
                         z-index: -1;
                     }
                     .step-icon{
-                        background: #FDFE02;
+                        background: #7FFE02;
                     }
                 }
                 &.stepItem.active:nth-child(2){
                     &::before{
-                        left: -50%;
-                        width: 200%;
+                        left: -90%;
+                        width: 275%;
                     }
                 }
                 &.stepItem.active:nth-child(3){
                     &::before{
                         left: -50%;
-                        width: 165%;
+                        width: 185%;
                     }
                 }
                 &.stepItem.active:nth-child(4){
                     &::before{
-                        left: -50%;
-                        width: 165%;
+                        left: -70%;
+                        width: 220%;
                     }
                 }
                 &.stepItem.active:nth-child(5){
                     &::before{
-                        left: -50%;
+                        left: -100%;
                         width: 120%;
                     }
                 }
@@ -550,4 +550,13 @@
 .single-bed-item img {
     border-radius: 8px;
     max-width: 221px;
+}
+
+
+/*=========================================
+========== PassengerForm Area Css =========
+===========================================*/
+.passengerForm-box{
+    background: $black;
+    border-radius: 16px;
 }
