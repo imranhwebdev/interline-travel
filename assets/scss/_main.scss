@@ -1,266 +1,66 @@
-
-.hero__area{
-    height: 675px;
-    @include mmd{
-        height: 550px;
-    }
-    @include sm{
-        height: 450px;
-    }
-    @include ssm{
-        padding-top: 100px;
-        height: auto;
-    }
-    .hero__content_inner{
-        padding: 24px;
-        border: 2px solid #4F5356;
-        border-radius: 10px;
-        background: linear-gradient(
-            rgba(#000, 0.65) 0%,
-            rgba(#000, 0.65) 100%
-        );
-        backdrop-filter: blur(10px);
-        & .filter_item_wrapper {
-            --btn-width: 125px;
-            --gap:12px;
-            --item:4;
-            gap: var(--gap);
-            @include mmd{
-                --item:4;
-                --btn-width:0px;
-            }
-            & > div {
-                flex: 0 0 auto;
-                &>*{
-                    width: 100%;
-                }
-                &:not(:last-child) {
-                    width: calc((100% - var(--btn-width)) / var(--item) - var(--gap));
-                    @include mmd{
-                        margin-bottom: 10px;
-                    }
-                    @include sm{
-                        width: calc(calc(100% - var(--btn-width)) / 2);
-                    }
-                }
-
-                &:last-child {
-                    width: var(--btn-width);
-                    @include mmd{
-                        width: 100%;
-                    }
-                    @include sm{
-                        width: 100%;
-                    }
-                }
-            }
-            
-        }
-        h3{
-            color: $F2F2F2;
-            font-weight: 700;
-            @include font-24;
-            margin-bottom: 12px !important;
-        }
-        h5{
-            font-size: 14px;
-            color: $F2F2F2;
-            font-weight: 500;
-        }
-        .single-filter-item{
-            input, select, .select2-selection{
-                background: #000;
-                color: $F2F2F2;
-                border-radius: 10px !important;
-                font-weight: 500;
-                font-size: 14px;
-                height: 45px;
-                border: 1px solid #4C4C4C;
-            }
-            input::placeholder, select::placeholder, .select2-selection::placeholder{
-                color: $F2F2F2;
-            }
-            .select2-selection{
-                display: flex;
-                align-items: center;
-                .select2-selection__rendered{
-                    color: $F2F2F2;
-                }
-                .select2-selection__arrow{
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-            button{
-                height: 45px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        } 
-       
-    }
-    
-    & .input-group-text {
-        background: transparent;
-        border: 0;
-        padding: 0;
-        color: #fff;
-    }
-    
-    & .input-group-append {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 38px;
-    }
-}
-
 /*=============================
 ======= Result Area Css =======
 ===============================*/
-.result__area{
+
+.result__area {
     padding: 50px 0;
-    h2{
-       @include font-34; 
-       color: $F2F2F2;
-       span{
+    h2 {
+        @include font-34;
+        color: $F2F2F2;
+        span {
             font-size: 14px;
             font-weight: 500;
             color: $ADAEB1;
-       }
-    }
-    .service-card{
-        background: $_0D101A;
-        padding: 24px;
-        display: block;
-        border-radius: 24px;
-        margin-bottom: 24px;
-        & .ssctc__left {
-            width: 256px;
-            flex: 0 0 auto;
-        }
-        .service-single-card-top-content{
-            @include sm{
-                flex-direction: column;
-            }
-        }
-        .service-card-content{
-            h2{
-                margin-bottom: 20px;
-            }
-           ul{
-            margin-bottom: 20px;
-                li{
-                    display: inline-block;
-                    color: $F2F2F2;
-                    opacity: 70%;
-                    @include font-16;
-                    padding-right: 30px;
-                    padding-bottom: 12px;
-                    & img{
-                        margin-right: 8px;
-                        width: 18px;
-                    }
-                }
-           }
-           .price-left{
-            color: $F2F2F2;
-            .price-txt{
-                @include font-20;
-                margin-bottom: 15px;
-            }
-            .price{
-                @include font-32;
-                display: block;
-                font-weight: 700;
-            }
-           }
-           .price-right-logo{
-            max-width: 132px;
-           }
-        }
-        .service-single-card-bottom-content{
-            border-top: 2px solid $_4F5255;
-            margin-top: 24px;
-            padding-top: 24px;
-            ul{
-                max-width: 770px;
-                margin: 0 auto;
-                text-align: center;
-                li{
-                    display: inline-block;
-                    padding:6px 12px;
-                    color: $F2F2F2;
-                    position: relative;
-                    z-index: 1;
-                    padding-left: 26px;
-                    @include font-16;
-                    &:before{
-                        position: absolute;
-                        content: "";
-                        left: 0;
-                        top: 8px;
-                        width: 20px;
-                        height: 20px;
-                        background-image: url('../img/check.svg');
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        
-                    }
-                }
-            }
         }
     }
 }
-
 
 
 /*======================================
 ======= Service Details Area Css =======
 ========================================*/
-.pageTop{
+
+.pageTop {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.serviceDetailsTable{
-    .sDTInner{
+
+.serviceDetailsTable {
+    .sDTInner {
         background: $_0D101A;
         padding: 20px 16px;
-        table{
+        table {
             color: #fff;
             font-size: 14px;
             font-weight: 500;
             margin-bottom: 0;
-            @include ssm{
+            @include ssm {
                 width: max-content;
             }
             .table>thead tr th {
                 border: 0;
                 font-size: 12px;
             }
-            thead{
-               tr{
-                background: #1B1E19;
-                border-radius: 10px !important;
-               }
+            thead {
+                tr {
+                    background: #1B1E19;
+                    border-radius: 10px !important;
+                }
             }
-            th{
-                padding:16px 14px;
+            th {
+                padding: 16px 14px;
             }
-            td{
-                padding:16px 14px;
-                img{
+            td {
+                padding: 16px 14px;
+                img {
                     margin-right: 8px;
                     max-width: 16px;
                 }
-                i{
+                i {
                     margin-right: 8px;
                     font-size: 14px;
                 }
             }
-
         }
     }
 }
@@ -268,19 +68,22 @@
 .serviceDetailsTable .sDTInner table thead th {
     border: 0;
 }
-.serviceDetailsTable .sDTInner table td, .serviceDetailsTable .sDTInner table tr{
+
+.serviceDetailsTable .sDTInner table td,
+.serviceDetailsTable .sDTInner table tr {
     border-color: #4F5255;
 }
 
 
-/* Swipper Slider Css */
-.serviceDetailsSliderFaq{
+/* Swiper Slider Css */
+
+.serviceDetailsSliderFaq {
     padding-bottom: 30px !important;
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
         opacity: 0;
         visibility: hidden;
     }
-    
     .mySwiper2 {
         height: auto;
         width: 100%;
@@ -291,41 +94,34 @@
         height: 100%;
         object-fit: cover;
     }
-
     .swiper {
         width: 100%;
         height: 300px;
         margin-left: auto;
         margin-right: auto;
     }
-
     .swiper-slide {
         background-size: cover;
         background-position: center;
     }
-
     .mySwiper2 {
-        height:auto;
+        height: auto;
         width: 100%;
     }
-
     .mySwiper {
         height: 20%;
         box-sizing: border-box;
         padding: 10px 0;
         border-radius: 16px !important;
     }
-
     .mySwiper .swiper-slide {
         width: 50px !important;
         height: 50px;
         opacity: 0.4;
     }
-
     .mySwiper .swiper-slide-thumb-active {
         opacity: 1;
     }
-    
     .swiper-slide img {
         display: block;
         width: 100%;
@@ -333,29 +129,27 @@
         object-fit: cover;
         border-radius: 16px;
     }
-    .serviceDS .swiper-wrapper{
+    .serviceDS .swiper-wrapper {
         height: 353px !important;
     }
-    
-    .swiper-watch-progress{
-        & .swiper-wrapper{
+    .swiper-watch-progress {
+        & .swiper-wrapper {
             justify-content: center;
             .swiper-slide img {
                 border-radius: 8px;
                 cursor: pointer;
-                }
-            & .swiper-slide-thumb-active{
-                border:1px solid #FDFE02;
+            }
+            & .swiper-slide-thumb-active {
+                border: 1px solid #FDFE02;
                 border-radius: 8px;
             }
         }
     }
-    
     .accordion-item {
         background: #0D101A;
         margin-bottom: 16px;
         border: 0;
-        padding:16px 20px;
+        padding: 16px 20px;
         border-radius: 8px;
         & .accordion-body {
             color: rgba($color: $F2F2F2, $alpha: .70);
@@ -365,7 +159,7 @@
             border-top: 1px solid #303238 !important;
             margin-top: 12px;
         }
-        & .accordion-button{
+        & .accordion-button {
             padding: 0 !important;
             background: transparent;
             font-size: 16px;
@@ -374,33 +168,30 @@
             line-height: 150% !important;
             box-shadow: 0 0 0 !important;
         }
-        & .accordion-button::after{
-            background-image:url('../img/icons/arrow-down.svg')
+        & .accordion-button::after {
+            background-image: url('../img/icons/arrow-down.svg')
         }
     }
 }
 
 
-
-
-
-
 /*======================================
-========== Trabellers Area Css =========
+========== Travelers Area Css =========
 ========================================*/
-.stepForm{
+
+.stepForm {
     padding-bottom: 200px;
-    .stepForm-wrapper{
+    .stepForm-wrapper {
         background: $_0D101A;
         border-radius: 8px;
-        .stepFTop{
+        .stepFTop {
             padding-top: 40px;
             padding-bottom: 20px;
             max-width: 670px;
             margin: 0 auto;
             position: relative;
             z-index: 1;
-            &::before{
+            &::before {
                 position: absolute;
                 content: "";
                 left: 7%;
@@ -410,14 +201,14 @@
                 background: #fff;
                 z-index: -1;
             }
-            .stepItem{
+            .stepItem {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 13px;
                 font-size: 16px;
                 font-weight: 500;
-                .step-icon{
+                .step-icon {
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
@@ -432,17 +223,17 @@
                         right: -150%;
                     }
                 }
-                &:last-child{
-                    .step-icon{
+                &:last-child {
+                    .step-icon {
                         span {
-                           display: none;
+                            display: none;
                         }
                     }
                 }
-                &.stepItem.active{
+                &.stepItem.active {
                     position: relative;
                     z-index: 1;
-                    &::before{
+                    &::before {
                         position: absolute;
                         content: "";
                         left: 38%;
@@ -452,48 +243,48 @@
                         background: #7FFE02;
                         z-index: -1;
                     }
-                    .step-icon{
+                    .step-icon {
                         background: #7FFE02;
                     }
                 }
-                &.stepItem.active:nth-child(2){
-                    &::before{
+                &.stepItem.active:nth-child(2) {
+                    &::before {
                         left: -90%;
                         width: 275%;
                     }
                 }
-                &.stepItem.active:nth-child(3){
-                    &::before{
+                &.stepItem.active:nth-child(3) {
+                    &::before {
                         left: -50%;
                         width: 185%;
                     }
                 }
-                &.stepItem.active:nth-child(4){
-                    &::before{
+                &.stepItem.active:nth-child(4) {
+                    &::before {
                         left: -70%;
                         width: 220%;
                     }
                 }
-                &.stepItem.active:nth-child(5){
-                    &::before{
+                &.stepItem.active:nth-child(5) {
+                    &::before {
                         left: -100%;
                         width: 120%;
                     }
                 }
             }
         }
-        .stepFBottom{
+        .stepFBottom {
             border-top: 1px solid #4F5255;
             padding-top: 24px;
             padding-bottom: 40px;
             padding-left: 40px;
             padding-right: 40px;
-            & .boxedBtn{
+            & .boxedBtn {
                 margin-top: 100px;
                 display: inline-block;
             }
         }
-        .mainCount{
+        .mainCount {
             background: #000000;
             padding: 8px;
             border-radius: 28px;
@@ -501,7 +292,7 @@
             font-size: 16px;
             font-weight: 500;
             color: $F2F2F2;
-            button{
+            button {
                 background: transparent;
                 border: 1px solid #4F5255 !important;
                 color: #FDFE02;
@@ -512,15 +303,14 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 50%;
-                &:hover{
+                &:hover {
                     border-color: $primary !important;
                 }
             }
         }
-        
     }
-   
 }
+
 .count-minmax {
     width: 333px;
     justify-content: space-between !important;
@@ -536,14 +326,15 @@
     display: inline-block;
     padding: 16px;
     border-radius: 8px;
-    h5{
+    h5 {
         font-size: 16px;
         color: $F2F2F2;
         font-weight: 500;
     }
-    &:hover, &.active{
+    &:hover,
+    &.active {
         border-color: #FDFE02;
-        box-shadow:0px 4px 24px 0px #FDFE024D;
+        box-shadow: 0px 4px 24px 0px #FDFE024D;
     }
 }
 
@@ -556,7 +347,8 @@
 /*=========================================
 ========== PassengerForm Area Css =========
 ===========================================*/
-.passengerForm-box{
+
+.passengerForm-box {
     background: $black;
     border-radius: 16px;
 }

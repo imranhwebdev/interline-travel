@@ -1,0 +1,135 @@
+.hero {
+    &__area {
+        height: 675px;
+        padding: 40px;
+        @include lg {
+            height: 550px;
+        }
+        @include md {
+            padding: 30px;
+        }
+        @include mmd {
+            height: 550px;
+        }
+        @include sm {
+            height: 450px;
+            padding: 24px;
+        }
+        @include ssm {
+            padding-top: 100px;
+            height: auto;
+        }
+        & .input {
+            &-group {
+                &-text {
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                    color: #fff;
+                }
+                &-append {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 38px;
+                }
+            }
+        }
+    }
+    &__content {
+        &_inner {
+            padding: 24px;
+            border: 2px solid #4F5356;
+            border-radius: 10px;
+            background: linear-gradient(rgba(#000, 0.65) 0%, rgba(#000, 0.65) 100%);
+            backdrop-filter: blur(10px);
+            h3 {
+                color: $F2F2F2;
+                font-weight: 700;
+                @include font-24;
+                margin-bottom: 12px !important;
+            }
+            h5 {
+                font-size: 14px;
+                color: $F2F2F2;
+                font-weight: 500;
+            }
+            & .form-icon {
+                z-index: 9;
+            }
+            .single-filter-item {
+                input,
+                select,
+                .select2-selection {
+                    background: #000;
+                    color: $F2F2F2;
+                    border-radius: 10px !important;
+                    font-weight: 500;
+                    font-size: 14px;
+                    height: 45px;
+                    border: 1px solid #4C4C4C;
+                    padding: 0 36px;
+                }
+                input::placeholder,
+                select::placeholder,
+                .select2-selection::placeholder {
+                    color: $F2F2F2;
+                }
+                & .select2 {
+                    &-container {
+                        width: 100% !important;
+                    }
+                    &-selection {
+                        display: flex;
+                        align-items: center;
+                        &__rendered {
+                            color: $F2F2F2;
+                        }
+                    }
+                }
+                button {
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.filter_item_wrapper {
+    --btn-width: 125px;
+    --gap: 12px;
+    --item: 4;
+    gap: var(--gap);
+    @include mmd {
+        --item: 4;
+        --btn-width: 0px;
+    }
+    &>div {
+        flex: 0 0 auto;
+        &>* {
+            width: 100%;
+        }
+        &:not(:last-child) {
+            width: calc((100% - var(--btn-width)) / var(--item) - var(--gap));
+            @include mmd {
+                margin-bottom: 10px;
+            }
+            @include sm {
+                width: calc(calc(100% - var(--btn-width)) / 2);
+            }
+        }
+        &:last-child {
+            width: var(--btn-width);
+            @include mmd {
+                width: 100%;
+            }
+            @include sm {
+                width: 100%;
+            }
+        }
+    }
+}

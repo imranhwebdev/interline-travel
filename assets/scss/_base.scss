@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 body {
     font-size: 16px;
@@ -6,7 +5,7 @@ body {
     line-height: 150%;
     color: $F2F2F2;
     background-color: $black;
-    font-family:$font-1;
+    font-family: $font-1;
 }
 
 h1,
@@ -18,9 +17,11 @@ h6 {
     font-weight: 700;
     margin: 0;
 }
-h2{
+
+h2 {
     @include font-32;
 }
+
 p {
     margin: 0;
 }
@@ -41,9 +42,13 @@ a {
     text-decoration: none !important;
     @include transition;
 }
-.container{
-    max-width: 1170px;
+
+.container {
+    @media (min-width: 1200px) {
+        max-width: 1170px;
+    }
 }
+
 input,
 textarea,
 button {
@@ -52,9 +57,11 @@ button {
     outline: none;
     @include transition;
 }
+
 .input-group-append {
     cursor: pointer;
-  }
+}
+
 input:focus,
 textarea:focus,
 button:focus {
@@ -81,13 +88,15 @@ input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
 }
-.bg-cover{
+
+.bg-cover {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
 }
-button{
-    background:$FDFE02;
+
+button {
+    background: $FDFE02;
     border-radius: 10px;
     color: $black;
     font-weight: 500;
@@ -95,42 +104,47 @@ button{
     padding: 12px 39px;
     display: inline-block;
     text-transform: capitalize;
-    border:1px solid $FDFE02;
-    &:hover{
+    border: 1px solid $FDFE02;
+    &:hover {
         background: transparent;
         color: $FDFE02;
     }
 }
 
-.select2-dropdown{
+.select2-dropdown {
     background-color: #000;
 }
 
 .icon {
-    color: blue; /* Change color */
-    font-size: 24px; /* Change size */
-  }
-  .select2-container--default .select2-selection--single .select2-selection__arrow b{
-      border: 0;
-      position: relative;
-      z-index: 1;
-  }
-  .select2-container--default .select2-selection--single .select2-selection__arrow{
-    height: auto;
-  }
-  .select2-container--default .select2-selection--single .select2-selection__arrow b:after{
-      position: absolute;
-      content: "\f107";
-      top: -5px;
-      right: 0;
-      width: 12px;
-      height: 12px;
-      font-size: 20px;
-      color: #fff;
-      font-family: 'Font Awesome\ 5 Free';
-  }
+    color: blue;
+    /* Change color */
+    font-size: 24px;
+    /* Change size */
+}
 
-  .backBtn{
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: auto;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b:after {
+    position: absolute;
+    content: "\f107";
+    top: -5px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Font Awesome\ 5 Free';
+}
+
+.backBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,14 +154,15 @@ button{
     border-radius: 50%;
     color: $white;
     font-size: 10px;
-    &:hover{
+    &:hover {
         color: $primary;
     }
-  }
+}
 
-  .boxedBtn, .inlineBtn{
+.boxedBtn,
+.inlineBtn {
     background: $FDFE02;
-    padding:12px 16px 12px 16px;
+    padding: 12px 16px 12px 16px;
     color: $black;
     font-weight: 500;
     font-size: 14px;
@@ -155,29 +170,27 @@ button{
     min-width: 125px;
     text-align: center;
     border-radius: 10px;
-    border:1px solid $FDFE02;
-    &:hover{
+    border: 1px solid $FDFE02;
+    &:hover {
         background: transparent;
         color: $FDFE02;
     }
-    @include ssm{
+    @include ssm {
         min-width: 115px;
-        padding:10px 14px 10px 14px;
-
+        padding: 10px 14px 10px 14px;
     }
-  }
-  .inlineBtn{
+}
+
+.inlineBtn {
     background: transparent;
     color: $FDFE02;
     border-color: #4F5255;
-    &:hover{
+    &:hover {
         background: $FDFE02;
         color: $black;
         border-color: $FDFE02;
     }
-  }
-
-
+}
 
 textarea:focus,
 input[type="text"]:focus,
@@ -196,40 +209,57 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .accordion-button:focus,
 button:focus,
-.uneditable-input:focus{
-  border-color: transparent !important ;
-  box-shadow: none !important;
-  outline: 0 none !important;
+.uneditable-input:focus {
+    // border-color: transparent !important;
+    box-shadow: none !important;
+    outline: 0 none !important;
 }
 
-
-
-.boxedBtn.large, .inlineBtn.large{
+.boxedBtn.large,
+.inlineBtn.large {
     min-width: 200px;
     text-transform: capitalize;
     display: inline-block;
 }
 
-.stepForm-wrapper{
-    .stepFTop{
-        .stepItem{
-            h5{
+.stepForm-wrapper {
+    .stepFTop {
+        .stepItem {
+            h5 {
                 font-size: 16px;
                 font-weight: 500;
                 color: $F2F2F2B2_70;
             }
-            &.active h5{
+            &.active h5 {
                 color: $white;
             }
         }
     }
 }
-.p-20{
+
+.p-20 {
     padding: 20px;
 }
-.mb-24{
+
+.mb-24 {
     margin-bottom: 24px;
 }
-.formTitle{
+
+.formTitle {
     margin-bottom: 20px;
+}
+
+.form {
+    &-icon {
+        --position: 18px;
+        position: absolute;
+        top: 50%;
+        right: var(--position);
+        transform: translateY(-50%);
+        z-index: 2;
+        &.start-0 {
+            right: auto;
+            left: var(--position) !important;
+        }
+    }
 }

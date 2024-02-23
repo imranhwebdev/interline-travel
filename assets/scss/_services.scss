@@ -1,0 +1,104 @@
+.service {
+    &-card {
+        background: $_0D101A;
+        padding: 24px;
+        display: block;
+        border-radius: 24px;
+        margin-bottom: 24px;
+        &:hover {
+            & h4 {
+                color: $primary;
+            }
+        }
+        & .ssctc__left {
+            width: 256px;
+            flex: 0 0 auto;
+        }
+        &-content {
+            & h4 {
+                @include font-34;
+                color: $F2F2F2;
+                margin-bottom: 20px;
+                @include transition;
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $ADAEB1;
+                }
+            }
+            & ul {
+                margin-bottom: 20px;
+                li {
+                    display: inline-block;
+                    color: $F2F2F2;
+                    opacity: 70%;
+                    @include font-16;
+                    padding-right: 30px;
+                    padding-bottom: 12px;
+                    & img {
+                        margin-right: 8px;
+                        width: 18px;
+                    }
+                }
+            }
+            .price-left {
+                color: $F2F2F2;
+                .price-txt {
+                    @include font-20;
+                    margin-bottom: 15px;
+                }
+                .price {
+                    @include font-32;
+                    display: block;
+                    font-weight: 700;
+                }
+            }
+            .price-right-logo {
+                max-width: 132px;
+            }
+        }
+    }
+    &-single {
+        &-card {
+            &-top {
+                &-content {
+                    @include sm {
+                        flex-direction: column;
+                    }
+                }
+            }
+            &-bottom {
+                &-content {
+                    border-top: 2px solid $_4F5255;
+                    margin-top: 24px;
+                    padding-top: 24px;
+                    ul {
+                        max-width: 770px;
+                        margin: 0 auto;
+                        text-align: center;
+                        li {
+                            display: inline-block;
+                            padding: 6px 12px;
+                            color: $F2F2F2;
+                            position: relative;
+                            z-index: 1;
+                            padding-left: 26px;
+                            @include font-16;
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                left: 0;
+                                top: 8px;
+                                width: 20px;
+                                height: 20px;
+                                background-image: url('../img/check.svg');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

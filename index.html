@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- All Meta Tags -->
     <meta charset="UTF-8">
@@ -22,436 +23,486 @@
     <link rel="stylesheet" href="assets/scss/style.css">
 
 </head>
+
 <body>
-  <header class="header" id="header">
-      <nav class="navbar navbar-expand-md bg-black">
-          <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="/assets/img/interlinelogo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-md bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="/assets/img/interlinelogo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Offers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Specials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Specials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-      </nav>
-  </header>
-  <section class="hero__area bg-cover" style="background-image: url('/assets/img/hero-bg1.jpg');">
-    <div class="container lg h-100">
-        <div class="row align-items-end h-100 pb-4">
-            <div class="col-12">
-                <div class="hero__content_inner mb-3">
-                    <h3>Choose your Cruise</h3>
-                    <div class="filter__area">
-                        <h5>Cruise Start Date</h5>
-                        <div class="filter_item_wrapper d-flex flex-wrap">
-                          <div class="single-filter-item">
-                            <div class="input-group date" id="datepicker">
-                              <input type="text" class="form-control" id="date" placeholder="December 2024 "/>
-                              <span class="input-group-append">
-                                <span class="input-group-text d-block">
-                                  <i class="fas fa-angle-down"></i>
-                                </span>
-                              </span>
+        </nav>
+    </header>
+    <div class="header-clear"></div>
+    <section class="hero__area bg-cover" style="background-image: url('/assets/img/hero-bg1.jpg');">
+        <div class="container-fluid h-100 g-0">
+            <div class="row align-items-end h-100 g-0">
+                <div class="col-12">
+                    <div class="hero__content_inner">
+                        <h3>Choose your Cruise</h3>
+                        <div class="filter__area">
+                            <h5 class="mb-2">Cruise Start Date</h5>
+                            <div class="filter_item_wrapper d-flex flex-wrap">
+                                <div class="single-filter-item">
+                                    <div class="input-group date" id="datepicker">
+                                        <div class="position-relative w-100">
+                                            <label for="" class="form-icon start-0">
+                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.00001 8.71155C6.85717 8.71155 6.73546 8.66125 6.63487 8.56067C6.53428 8.46008 6.48399 8.33837 6.48399 8.19553C6.48399 8.05269 6.53428 7.93098 6.63487 7.83039C6.73546 7.72981 6.85717 7.67951 7.00001 7.67951C7.14285 7.67951 7.26456 7.72981 7.36514 7.83039C7.46573 7.93098 7.51602 8.05269 7.51602 8.19553C7.51602 8.33837 7.46573 8.46008 7.36514 8.56067C7.26456 8.66125 7.14285 8.71155 7.00001 8.71155ZM4.66667 8.71155C4.52383 8.71155 4.40212 8.66125 4.30154 8.56067C4.20095 8.46008 4.15066 8.33837 4.15066 8.19553C4.15066 8.05269 4.20095 7.93098 4.30154 7.83039C4.40212 7.72981 4.52383 7.67951 4.66667 7.67951C4.80951 7.67951 4.93122 7.72981 5.03181 7.83039C5.1324 7.93098 5.18269 8.05269 5.18269 8.19553C5.18269 8.33837 5.1324 8.46008 5.03181 8.56067C4.93122 8.66125 4.80951 8.71155 4.66667 8.71155ZM9.33334 8.71155C9.1905 8.71155 9.06879 8.66125 8.9682 8.56067C8.86762 8.46008 8.81732 8.33837 8.81732 8.19553C8.81732 8.05269 8.86762 7.93098 8.9682 7.83039C9.06879 7.72981 9.1905 7.67951 9.33334 7.67951C9.47618 7.67951 9.59789 7.72981 9.69848 7.83039C9.79906 7.93098 9.84936 8.05269 9.84936 8.19553C9.84936 8.33837 9.79906 8.46008 9.69848 8.56067C9.59789 8.66125 9.47618 8.71155 9.33334 8.71155ZM7.00001 11C6.85717 11 6.73546 10.9497 6.63487 10.8491C6.53428 10.7485 6.48399 10.6268 6.48399 10.484C6.48399 10.3412 6.53428 10.2194 6.63487 10.1189C6.73546 10.0183 6.85717 9.96796 7.00001 9.96796C7.14285 9.96796 7.26456 10.0183 7.36514 10.1189C7.46573 10.2194 7.51602 10.3412 7.51602 10.484C7.51602 10.6268 7.46573 10.7485 7.36514 10.8491C7.26456 10.9497 7.14285 11 7.00001 11ZM4.66667 11C4.52383 11 4.40212 10.9497 4.30154 10.8491C4.20095 10.7485 4.15066 10.6268 4.15066 10.484C4.15066 10.3412 4.20095 10.2194 4.30154 10.1189C4.40212 10.0183 4.52383 9.96796 4.66667 9.96796C4.80951 9.96796 4.93122 10.0183 5.03181 10.1189C5.1324 10.2194 5.18269 10.3412 5.18269 10.484C5.18269 10.6268 5.1324 10.7485 5.03181 10.8491C4.93122 10.9497 4.80951 11 4.66667 11ZM9.33334 11C9.1905 11 9.06879 10.9497 8.9682 10.8491C8.86762 10.7485 8.81732 10.6268 8.81732 10.484C8.81732 10.3412 8.86762 10.2194 8.9682 10.1189C9.06879 10.0183 9.1905 9.96796 9.33334 9.96796C9.47618 9.96796 9.59789 10.0183 9.69848 10.1189C9.79906 10.2194 9.84936 10.3412 9.84936 10.484C9.84936 10.6268 9.79906 10.7485 9.69848 10.8491C9.59789 10.9497 9.47618 11 9.33334 11ZM3.09618 13.0417C2.80152 13.0417 2.5521 12.9396 2.34794 12.7354C2.14377 12.5312 2.04169 12.2818 2.04169 11.9872V4.17951C2.04169 3.88485 2.14377 3.63544 2.34794 3.43127C2.5521 3.2271 2.80152 3.12502 3.09618 3.12502H3.90388V1.89105H4.80129V3.12502H9.22115V1.89105H10.0961V3.12502H10.9038C11.1985 3.12502 11.4479 3.2271 11.6521 3.43127C11.8562 3.63544 11.9583 3.88485 11.9583 4.17951V11.9872C11.9583 12.2818 11.8562 12.5312 11.6521 12.7354C11.4479 12.9396 11.1985 13.0417 10.9038 13.0417H3.09618ZM3.09618 12.1667H10.9038C10.9487 12.1667 10.9899 12.148 11.0273 12.1106C11.0646 12.0732 11.0833 12.032 11.0833 11.9872V6.51285H2.91667V11.9872C2.91667 12.032 2.93537 12.0732 2.97276 12.1106C3.01016 12.148 3.0513 12.1667 3.09618 12.1667Z" fill="#F2F2F2"/>
+                                                </svg>                                                    
+                                            </label>
+                                            <input type="text" class="form-control" id="date" placeholder="December 2024 " />
+                                        </div>
+                                        <span class="input-group-append">
+                                            <span class="input-group-text d-block">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.90088 4.7481C2.84519 4.69547 2.77968 4.65433 2.70809 4.62702C2.6365 4.59971 2.56023 4.58677 2.48364 4.58894C2.40704 4.59111 2.33163 4.60834 2.26169 4.63965C2.19176 4.67096 2.12868 4.71574 2.07605 4.77143C2.02342 4.82713 1.98228 4.89264 1.95497 4.96423C1.92766 5.03582 1.91472 5.11209 1.91689 5.18868C1.91906 5.26528 1.93629 5.34069 1.9676 5.41063C1.99891 5.48056 2.04369 5.54364 2.09938 5.59627L7.34939 10.5546C7.45769 10.657 7.60109 10.7141 7.75014 10.7141C7.89918 10.7141 8.04258 10.657 8.15089 10.5546L13.4015 5.59627C13.4584 5.54399 13.5043 5.48092 13.5367 5.41073C13.569 5.34054 13.5871 5.26462 13.5898 5.18739C13.5925 5.11016 13.5799 5.03316 13.5527 4.96085C13.5254 4.88854 13.484 4.82237 13.431 4.76619C13.3779 4.71 13.3142 4.66491 13.2436 4.63355C13.173 4.60219 13.0968 4.58517 13.0195 4.58349C12.9423 4.5818 12.8655 4.59549 12.7935 4.62375C12.7216 4.65201 12.656 4.69428 12.6006 4.7481L7.75014 9.32843L2.90088 4.7481Z" fill="#F2F2F2"/>
+                                                </svg>                                                    
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="single-filter-item">
+                                    <div class="position-relative w-100">
+                                        <label for="#" class="form-icon start-0">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_610_4756)">
+                                                    <path d="M7.75 1.27777C6.51936 1.27777 5.31635 1.6427 4.29311 2.3264C3.26988 3.01011 2.47236 3.98189 2.00141 5.11885C1.53047 6.25581 1.40725 7.5069 1.64733 8.71389C1.88742 9.92088 2.48003 11.0296 3.35022 11.8998C4.22041 12.77 5.32911 13.3626 6.5361 13.6027C7.74309 13.8427 8.99417 13.7195 10.1311 13.2486C11.2681 12.7776 12.2399 11.9801 12.9236 10.9569C13.6073 9.93364 13.9722 8.73063 13.9722 7.49999C13.9722 5.84976 13.3167 4.26711 12.1498 3.10022C10.9829 1.93332 9.40023 1.27777 7.75 1.27777ZM10.1611 9.51444C10.1329 9.55719 10.0964 9.59393 10.0539 9.62256C10.0114 9.65119 9.9637 9.67113 9.91347 9.68125C9.86323 9.69137 9.8115 9.69146 9.76123 9.68152C9.71096 9.67158 9.66315 9.6518 9.62055 9.62333L7.32611 8.06777V4.68055C7.32611 4.57741 7.36708 4.47849 7.44001 4.40556C7.51294 4.33263 7.61186 4.29166 7.715 4.29166C7.81814 4.29166 7.91705 4.33263 7.98998 4.40556C8.06291 4.47849 8.10389 4.57741 8.10389 4.68055V7.65555L10.0483 8.97388C10.0914 9.00183 10.1285 9.03802 10.1575 9.08038C10.1865 9.12274 10.2068 9.17042 10.2173 9.22067C10.2278 9.27092 10.2282 9.32275 10.2186 9.37317C10.2089 9.42359 10.1894 9.4716 10.1611 9.51444ZM10.025 3.70055C9.47781 3.37074 8.86576 3.1632 8.23083 3.09218C7.5959 3.02115 6.95311 3.08832 6.34658 3.28908C5.74005 3.48983 5.18412 3.81942 4.71695 4.25523C4.24977 4.69104 3.8824 5.22275 3.64004 5.81389C3.39768 6.40503 3.28607 7.0416 3.31287 7.67993C3.33966 8.31826 3.50423 8.94324 3.79527 9.51199C4.08632 10.0807 4.49696 10.5798 4.99902 10.9749C5.50107 11.37 6.08266 11.6519 6.70389 11.8011L6.58333 12.4117C5.87086 12.2458 5.20287 11.9274 4.62547 11.4782C4.04806 11.0291 3.575 10.46 3.23894 9.8103C2.90287 9.16055 2.71181 8.44562 2.67895 7.71485C2.64609 6.98407 2.7722 6.25488 3.04859 5.57759C3.32497 4.9003 3.74505 4.29106 4.27981 3.79192C4.81457 3.29279 5.45128 2.91564 6.14598 2.68653C6.84069 2.45742 7.57684 2.3818 8.30361 2.46488C9.03039 2.54797 9.73048 2.78778 10.3556 3.16777L10.025 3.70055Z" fill="#F2F2F2"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_610_4756">
+                                                        <rect width="14" height="14" fill="white" transform="translate(0.75 0.5)"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </label>
+                                        <select class="js-example-basic-single" name="state">
+                                            <option value="1-4night">1-4 Nights</option>
+                                            <option value="2-6night">2-6 Nights</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="single-filter-item">
+                                    <div class="position-relative">
+                                        <label for="#" class="form-icon start-0">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_610_4764)">
+                                                    <path d="M4.40833 7.49997C4.41052 8.14647 4.49148 8.79029 4.64944 9.4172H7.16944V5.73053H4.61444C4.48001 6.31082 4.41088 6.90432 4.40833 7.49997Z" fill="#F2F2F2"/>
+                                                    <path d="M7.83055 5.73053V9.4172H10.3506C10.5151 8.7911 10.6026 8.14727 10.6111 7.49997C10.6098 6.90447 10.542 6.31097 10.4089 5.73053H7.83055Z" fill="#F2F2F2"/>
+                                                    <path d="M7.5 1.27777C6.26936 1.27777 5.06636 1.6427 4.04312 2.3264C3.01988 3.01011 2.22236 3.98189 1.75142 5.11885C1.28047 6.25581 1.15725 7.5069 1.39734 8.71389C1.63742 9.92088 2.23003 11.0296 3.10022 11.8998C3.97042 12.77 5.07911 13.3626 6.28611 13.6027C7.4931 13.8427 8.74418 13.7195 9.88114 13.2486C11.0181 12.7776 11.9899 11.9801 12.6736 10.9569C13.3573 9.93364 13.7222 8.73063 13.7222 7.49999C13.7222 5.84976 13.0667 4.26711 11.8998 3.10022C10.7329 1.93332 9.15024 1.27777 7.5 1.27777ZM12.2522 10.1094H10.8444C10.5783 10.9427 10.1847 11.7298 9.67778 12.4428C9.30369 12.6058 8.91229 12.7258 8.51111 12.8005C9.22958 12.0199 9.78254 11.1018 10.1367 10.1017H7.83444V12.8822H7.17722V10.1094H4.86333C5.21699 11.1109 5.76998 12.0304 6.48889 12.8122C6.09598 12.7383 5.71251 12.6209 5.34556 12.4622C4.83682 11.7433 4.44321 10.9495 4.17889 10.1094H2.74778C2.62354 9.8828 2.51568 9.64757 2.425 9.40555H3.98056C3.8348 8.78072 3.75914 8.14159 3.755 7.49999C3.75521 6.90528 3.81778 6.31222 3.94167 5.73055H2.35111C2.43289 5.48924 2.53166 5.25402 2.64667 5.02666H4.12833C4.40635 4.10073 4.8375 3.22791 5.40389 2.44444C5.76306 2.29562 6.13727 2.18609 6.52 2.11777C5.74637 2.94807 5.16252 3.93664 4.80889 5.01499H7.17722V2.05555H7.83444V5.02666H10.2028C9.84979 3.95003 9.2673 2.96286 8.49556 2.13333C8.87767 2.19671 9.25186 2.30102 9.61167 2.44444C10.1748 3.22225 10.6045 4.08834 10.8833 5.00722H12.3494C12.4644 5.23458 12.5632 5.4698 12.645 5.7111H11.0661C11.1927 6.29899 11.2565 6.89864 11.2567 7.49999C11.2547 8.14534 11.1803 8.78844 11.035 9.41722H12.5906C12.4943 9.65569 12.3813 9.88701 12.2522 10.1094Z" fill="#F2F2F2"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_610_4764">
+                                                        <rect width="14" height="14" fill="white" transform="translate(0.5 0.5)"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>                                                
+                                        </label>
+                                        <select id="countrySelect" class="js-example-basic-single" name="country"></select>
+                                    </div>
+                                </div>
+                                <div class="single-filter-item">
+                                    <div class="position-relative">
+                                        <label for="" class="form-icon start-0">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.375 11.875C9.2745 11.875 11.625 9.5245 11.625 6.625C11.625 3.72551 9.2745 1.375 6.375 1.375C3.47551 1.375 1.125 3.72551 1.125 6.625C1.125 9.5245 3.47551 11.875 6.375 11.875Z" stroke="#F2F2F2" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.3125 10.5625L13.375 13.625" stroke="#F2F2F2" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                                
+                                        </label>
+                                        <input type="search" id="date" placeholder="Search" class="w-100" />
+                                    </div>
+                                </div>
+                                <div class="single-filter-item">
+                                    <button>search</button>
+                                </div>
                             </div>
-                          </div>
-                          <div class="single-filter-item">
-                            <select class="js-example-basic-single" name="state">
-                              <option value="1-4night">1-4 Nights</option>
-                              <option value="2-6night">2-6 Nights</option>
-                            </select>
-                          </div>
-                          <div class="single-filter-item">
-                            <select id="countrySelect" class="js-example-basic-single" name="country"></select>
-                          </div>
-                          <div class="single-filter-item">
-                            <input type="search" id="date" placeholder="Search">
-                          </div>
-                          <div class="single-filter-item">
-                            <button>search</button>
-                          </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="result__area">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2>Result <span>25 results found</span></h2>
+    <section class="result__area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Result <span>25 results found</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="service-details.html" class="service-card">
+                        <div class="service-single-card-top-content d-flex gap-4">
+                            <div class="ssctc__left">
+                                <img src="/assets/img/caribbeaimg1.png" alt="">
+                            </div>
+                            <div class="service-card-content w-100">
+                                <h4>Example Cruiseliner </h4>
+                                <ul class="service-seduel-list">
+                                    <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
+                                    <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
+                                    <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
+                                    <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
+                                    <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE / Sir Bani Yas, United Arab Emirates</li>
+                                </ul>
+                                <div class="price-with-logo d-flex justify-content-between">
+                                    <div class="price-left">
+                                        <span class="price-txt">Price from</span>
+                                        <span class="price">€5,999</span>
+                                    </div>
+                                    <div class="price-right-logo">
+                                        <img src="/assets/img/Seabourn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="service-single-card-bottom-content">
+                            <ul>
+                                <li>Port, taxes and fees</li>
+                                <li>Speciality dining</li>
+                                <li>All-inclusive </li>
+                                <li>Gratuities</li>
+                                <li>Ultra-luxury</li>
+                                <li>Onboard casino</li>
+                                <li>Wifi-included</li>
+                                <li>Fitness classes</li>
+                                <li>Live entertainment</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
-                </div>
-              </div>
+    </section>
 
-            </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
+    <Footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Interline Travel 2024</p>
                 </div>
-              </div>
-
             </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
-          <a href="service-details.html" class="service-card">
-            <div class="service-single-card-top-content d-flex gap-4">
-              <div class="ssctc__left">
-                <img src="/assets/img/caribbeaimg1.png" alt="">
-              </div>
-              <div class="service-card-content w-100">
-                <h2>Example Cruiseliner </h2>
-                <ul class="service-seduel-list">
-                  <li><img src="/assets/img/icons/resultsboxicon1.svg" alt="">Dubai, UAE / Asia & Indian Ocean</li>
-                  <li><img src="/assets/img/icons/calendar.svg" alt="">7th, December 2023</li>
-                  <li><img src="/assets/img/icons/night.svg" alt="">16 nights</li>
-                  <li><img src="/assets/img/icons/seaburn.svg" alt="">Seaburn Encore</li>
-                  <li><img src="/assets/img/icons/dubai.svg" alt="">Dubai UAE /  Sir Bani Yas, United Arab Emirates</li>
-                </ul>
-                <div class="price-with-logo d-flex justify-content-between">
-                  <div class="price-left">
-                    <span class="price-txt">Price from</span>
-                    <span class="price">€5,999</span>
-                  </div>
-                  <div class="price-right-logo">
-                    <img src="/assets/img/Seabourn.png" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="service-single-card-bottom-content">
-              <ul>
-                <li>Port, taxes and fees</li>
-                <li>Speciality dining</li>
-                <li>All-inclusive </li>
-                <li>Gratuities</li>
-                <li>Ultra-luxury</li>
-                <li>Onboard casino</li>
-                <li>Wifi-included</li>
-                <li>Fitness classes</li>
-                <li>Live entertainment</li>
-              </ul>
-            </div>
-          </a>
         </div>
-      </div>
-    </div>
-  </section>
+    </Footer>
 
-  <Footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <p>Interline Travel 2024</p>
-        </div>
-      </div>
-    </div>
-  </Footer>
+    <!-- jQuery JS -->
+    <script src="assets/js/jquery.min.js"></script>
 
-  <!-- jQuery JS -->
-  <script src="assets/js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
 
-  <!-- Popper JS -->
-  <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
 
-  <!-- Bootstrap JS -->
-  <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="assets/plugins/select2/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
-  <!-- Select2 JS -->
-  <script src="assets/plugins/select2/select2.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
-  <!-- Main Script JS -->
-  <script src="assets/js/script.js"></script>
+    <!-- Main Script JS -->
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

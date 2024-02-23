@@ -1,47 +1,51 @@
-.header{
+.header {
     width: 100%;
-    transition: top 0.3s ease; 
-    border-bottom: 1px solid  rgba($color: $F2F2F2, $alpha: .20);
-    .navbar-brand{
-        img{
+    transition: top 0.3s ease;
+    border-bottom: 1px solid rgba($color: $F2F2F2, $alpha: .20);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    &-clear {
+        height: 58px;
+    }
+    .navbar-brand {
+        img {
             width: 107px;
         }
     }
-    .navbar-nav{
-        li{
+    .navbar-nav {
+        li {
             padding-left: 19px;
-            @include sm{
+            @include sm {
                 padding-left: 0;
-                border-bottom: 1px solid rgba(255,255,255, 0.1);
-
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             }
-            &:last-child{
-                @include sm{
+            &:last-child {
+                @include sm {
                     border-bottom: 0;
-    
                 }
             }
-            a{
+            a {
                 color: $F2F2F2;
                 font-size: 16px;
                 opacity: .5;
                 @include transition;
-                &.active{
+                &.active {
                     color: $white;
                     opacity: 1;
                 }
-                &:hover{
+                &:hover {
                     color: $white;
                     opacity: 1;
                 }
-                @include sm{
-                    padding:15px 0;
+                @include sm {
+                    padding: 15px 0;
                 }
             }
         }
-        
     }
-    & .navbar-toggler{
+    & .navbar-toggler {
         background: $primary;
     }
 }
@@ -50,5 +54,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure it stays above other content */
-  }
+    z-index: 1000;
+    /* Ensure it stays above other content */
+}

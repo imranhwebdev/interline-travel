@@ -1,10 +1,10 @@
-@import '../scss/colors';
+@import '../scss/variables';
 @import '../scss/mixins';
 @import '../scss/media_quers';
 @import '../scss/base';
-// HEADER
+@import '../scss/component';
 @import '../scss/header';
-// MAIN
 @import '../scss/main';
-// FOOTER
+@import '../scss/services';
+@import '../scss/banner';
 @import '../scss/footer';
