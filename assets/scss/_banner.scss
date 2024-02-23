@@ -116,10 +116,10 @@
         &:not(:last-child) {
             width: calc((100% - var(--btn-width)) / var(--item) - var(--gap));
             @include mmd {
-                margin-bottom: 10px;
+                margin-bottom: 5px;
             }
             @include sm {
-                width: calc(calc(100% - var(--btn-width)) / 2);
+                --item: 1;
             }
         }
         &:last-child {
