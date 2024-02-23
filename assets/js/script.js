@@ -12,7 +12,6 @@ jQuery(function($) {
     $('.js-example-basic-single').select2();
 
 
-
 });
 // Fetch the list of countries from an API
 $.ajax({

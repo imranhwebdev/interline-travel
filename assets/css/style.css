@@ -1137,4 +1137,67 @@ button:focus,
 .multiBtns i {
   padding-right: 8px;
   rotate: -1deg;
+}
+
+.chooseDOption {
+  gap: 20px;
+}
+.chooseDOption .from-control {
+  width: 100%;
+}
+.chooseDOption .from-control label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.chooseDOption .select2-container--default {
+  width: 100% !important;
+  background: transparent !important;
+  color: #F2F2F2;
+  border-radius: 10px !important;
+  font-weight: 500;
+  font-size: 14px;
+  height: 45px;
+}
+.chooseDOption .select2-container--default .select2-selection--single {
+  background: transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border-color: #4F5255;
+}
+.chooseDOption .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: rgba(242, 242, 242, 0.7);
+  padding-left: 12px;
+}
+
+.diningFTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  text-transform: capitalize;
+}
+
+.diningOption-right textarea {
+  width: 100%;
+  background: transparent;
+  border-radius: 8px;
+  color: rgba(242, 242, 242, 0.7);
+  height: 73px;
+}
+.diningOption-right textarea::-moz-placeholder {
+  color: rgba(242, 242, 242, 0.7);
+  font-style: italic;
+}
+.diningOption-right textarea::placeholder {
+  color: rgba(242, 242, 242, 0.7);
+  font-style: italic;
+}
+
+.backNextBtns {
+  text-align: center;
+}
+
+.stepFBottom {
+  border-bottom: 1px solid #4F5255;
 }/*# sourceMappingURL=style.css.map */
