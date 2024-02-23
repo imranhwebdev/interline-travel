@@ -5,7 +5,6 @@ jQuery(function($) {
     $('select').select2();
 
 
-
 });
 // Fetch the list of countries from an API
 $.ajax({
