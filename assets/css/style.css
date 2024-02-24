@@ -1199,7 +1199,7 @@ button:focus,
   text-align: center;
 }
 
-.stepFBottom {
+.diningOptionPage .stepFBottom {
   border-bottom: 1px solid #4F5255;
 }
 
@@ -1216,19 +1216,20 @@ button:focus,
 .privacy-policy figure img {
   border-radius: 4px;
 }
-.privacy-policy .form-check {
+
+.form-check {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
   cursor: pointer;
 }
-.privacy-policy .form-check input {
+.form-check input {
   padding: 0;
   margin-top: -2px;
   cursor: pointer;
 }
-.privacy-policy .form-check .form-check-input:checked[type=checkbox] {
+.form-check .form-check-input:checked[type=checkbox] {
   background-image: url("../img/checkbx.png");
   background-color: #FDFE02;
 }/*# sourceMappingURL=style.css.map */
