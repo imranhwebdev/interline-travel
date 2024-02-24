@@ -37,3 +37,90 @@
     padding-right: 8px;
     rotate: -1deg;
 }
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+    input {
+        padding: 0;
+        margin-top: -2px;
+        cursor: pointer;
+    }
+    .form-check-input:checked[type=checkbox] {
+        background-image: url('../img/checkbx.png');
+        background-color: #FDFE02;
+    }
+}
+.payment-box{
+    border-radius: 24px;
+    padding: 32px;
+    .form-check{
+        margin-top: 32px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        a{
+            text-decoration: underline !important;
+            color: $white;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .form-check-input[type=checkbox] {
+        background: transparent;
+        border-color:$F2F2F2B2_70; ;
+    }
+}
+.tAmount{
+    background:#181807 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 598px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    padding: 12px 10px;
+    font-size: 12px;
+    color: $F2F2F2B2_70;
+    border-radius: 12px;
+    span{
+        @include font-24;
+        font-weight: 500;
+        color: $F2F2F2;
+    }
+}
+
+.personal-details-box{
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    .pd-heading{
+        margin-bottom: 17px;
+        h5{
+            font-size: 16px;
+        }
+    }
+}
+
+.pd-single-box{
+    padding: 16px;
+    background: #0D101A;
+    border-radius: 8px;
+    text-align: left;
+    h5{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 12px;
+        color: $F2F2F2B2_70;
+    }
+}
+
+.rowgap-16{
+    row-gap: 16px;
+}
