@@ -21,55 +21,27 @@
 ========================================*/
 
 .pageTop {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0;
+    @include mmd {
+        padding: 24px 0;
+    }
+    & .backDetails {
+        & h4 {
+            @include sm {
+                display: none;
+            }
+        }
+    }
 }
 
 .serviceDetailsTable {
     .sDTInner {
         background: $_0D101A;
         padding: 20px 16px;
-        table {
-            color: #fff;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 0;
-            @include ssm {
-                width: max-content;
-            }
-            .table>thead tr th {
-                border: 0;
-                font-size: 12px;
-            }
-            thead {
-                tr {
-                    background: #1B1E19;
-                    border-radius: 10px !important;
-                }
-            }
-            th {
-                padding: 16px 14px;
-            }
-            td {
-                padding: 16px 14px;
-                img {
-                    margin-right: 8px;
-                    max-width: 16px;
-                }
-                i {
-                    margin-right: 8px;
-                    font-size: 14px;
-                }
-            }
-        }
+        border-radius: 1rem;
     }
 }
 
-.serviceDetailsTable .sDTInner table thead th {
-    border: 0;
-}
-
-.serviceDetailsTable .sDTInner table td,
 .serviceDetailsTable .sDTInner table tr {
     border-color: #4F5255;
 }
@@ -134,6 +106,7 @@
     }
     .swiper-watch-progress {
         & .swiper-wrapper {
+            height: auto;
             justify-content: center;
             .swiper-slide img {
                 border-radius: 8px;
@@ -145,13 +118,15 @@
             }
         }
     }
-    .accordion-item {
-        background: #0D101A;
-        margin-bottom: 16px;
-        border: 0;
-        padding: 16px 20px;
-        border-radius: 8px;
-        & .accordion-body {
+    & .accordion {
+        &-item {
+            background: #0D101A;
+            margin-bottom: 16px;
+            border: 0;
+            padding: 16px 20px;
+            border-radius: 8px;
+        }
+        &-body {
             color: rgba($color: $F2F2F2, $alpha: .70);
             border: 0 !important;
             padding: 12px 0;
@@ -159,7 +134,7 @@
             border-top: 1px solid #303238 !important;
             margin-top: 12px;
         }
-        & .accordion-button {
+        &-button {
             padding: 0 !important;
             background: transparent;
             font-size: 16px;
@@ -167,9 +142,10 @@
             color: #f3f3f3;
             line-height: 150% !important;
             box-shadow: 0 0 0 !important;
-        }
-        & .accordion-button::after {
-            background-image: url('../img/icons/arrow-down.svg')
+            --bs-accordion-btn-icon-width: 1rem;
+            &::after {
+                background-image: url('../img/icons/arrow-down.svg');
+            }
         }
     }
 }
@@ -180,108 +156,138 @@
 ========================================*/
 
 .stepForm {
-    padding-bottom: 200px;
-    .stepForm-wrapper {
-        background: $_0D101A;
-        border-radius: 8px;
-        .stepFTop {
-            padding-top: 40px;
-            padding-bottom: 20px;
-            max-width: 670px;
-            margin: 0 auto;
+    min-height: 73vh;
+    padding-bottom: 50px;
+    .stepFTop {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        max-width: 670px;
+        margin: 0 auto;
+        @include sm {
+            max-width: 100%;
+            overflow-y: hidden;
+        }
+        .stepItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 13px;
+            font-size: 16px;
+            font-weight: 500;
             position: relative;
             z-index: 1;
+            width: calc(100% / 5);
+            flex: 0 0 auto;
+            @include sm {
+                width: 132px;
+            }
+            &::after,
             &::before {
-                position: absolute;
                 content: "";
-                left: 7%;
-                top: 45.7%;
-                width: 89%;
-                height: 2px;
-                background: #fff;
+                position: absolute;
+                top: calc(50% - 15px);
+                left: 4px;
+                transform: translateY(-50%);
+                height: 1px;
+                width: calc(50% + 1px);
+                background-color: #4F5255;
                 z-index: -1;
             }
-            .stepItem {
+            &::after {
+                left: auto;
+                right: -4px;
+            }
+            &:first-child {
+                &::before {
+                    display: none;
+                }
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            .step-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $black;
+                border: 1px solid #4F5255;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
-                gap: 13px;
-                font-size: 16px;
-                font-weight: 500;
+                justify-content: center;
+                position: relative;
+                span {
+                    position: absolute;
+                    right: -150%;
+                    color: $white;
+                }
+            }
+            &.passed {
+                position: relative;
+                z-index: 1;
+                --active-color: #7FFE02;
+                &::before,
+                &::after {
+                    background-color: var(--active-color);
+                }
                 .step-icon {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background: $black;
-                    border: 1px solid #4F5255;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    span {
-                        position: absolute;
-                        right: -150%;
+                    background-color: var(--active-color);
+                    border-color: var(--active-color);
+                    color: $black;
+                    & span {
+                        color: var(--active-color);
                     }
                 }
-                &:last-child {
-                    .step-icon {
-                        span {
-                            display: none;
-                        }
-                    }
+            }
+            &.active {
+                position: relative;
+                z-index: 1;
+                --active-color: #FDFE02;
+                &::before,
+                &::after {
+                    background-color: var(--active-color);
                 }
-                &.stepItem.active {
-                    position: relative;
-                    z-index: 1;
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        left: 38%;
-                        top: 28%;
-                        width: 110%;
-                        height: 2px;
-                        background: #7FFE02;
-                        z-index: -1;
-                    }
-                    .step-icon {
-                        background: #7FFE02;
-                    }
-                }
-                &.stepItem.active:nth-child(2) {
-                    &::before {
-                        left: -90%;
-                        width: 275%;
-                    }
-                }
-                &.stepItem.active:nth-child(3) {
-                    &::before {
-                        left: -50%;
-                        width: 185%;
-                    }
-                }
-                &.stepItem.active:nth-child(4) {
-                    &::before {
-                        left: -70%;
-                        width: 220%;
-                    }
-                }
-                &.stepItem.active:nth-child(5) {
-                    &::before {
-                        left: -100%;
-                        width: 120%;
+                .step-icon {
+                    background-color: var(--active-color);
+                    border-color: var(--active-color);
+                    color: $black;
+                    & span {
+                        color: var(--active-color);
                     }
                 }
             }
         }
+    }
+    .stepForm-wrapper {
+        background: $_0D101A;
+        border-radius: 8px;
         .stepFBottom {
             border-top: 1px solid #4F5255;
-            padding-top: 24px;
-            padding-bottom: 40px;
-            padding-left: 40px;
-            padding-right: 40px;
-            & .boxedBtn {
-                margin-top: 100px;
-                display: inline-block;
+            --padding: 40px;
+            --padding-top: 24px;
+            padding: var(--padding);
+            padding-top: var(--padding-top);
+            @include sm {
+                --padding: 24px;
+                --padding-top: 18px;
+            }
+        }
+        & .backNextBtns {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            @include lg {
+                margin-top: 60px;
+            }
+            @include md {
+                margin-top: 34px;
+            }
+            @include sm {
+                margin-top: 30px;
+                gap: 1rem;
             }
         }
         .mainCount {
@@ -303,9 +309,13 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 50%;
+                font-size: 1rem;
                 &:hover {
                     border-color: $primary !important;
                 }
+            }
+            & .count {
+                min-width: 15px;
             }
         }
     }
@@ -315,15 +325,22 @@
     width: 333px;
     justify-content: space-between !important;
     margin: 20px auto 20px;
+    @include sm {
+        width: 100%;
+    }
 }
 
-.stepItem.active i {
-    color: #000000;
+.stepSelectBed-wrapper {
+    & .col-6 {
+        @include ssm {
+            width: 100%;
+        }
+    }
 }
 
 .single-bed-item {
     border: 1px solid #4F5255;
-    display: inline-block;
+    display: block;
     padding: 16px;
     border-radius: 8px;
     h5 {
@@ -341,14 +358,5 @@
 .single-bed-item img {
     border-radius: 8px;
     max-width: 221px;
-}
-
-
-/*=========================================
-========== PassengerForm Area Css =========
-===========================================*/
-
-.passengerForm-box {
-    background: $black;
-    border-radius: 16px;
+    width: 100%;
 }
