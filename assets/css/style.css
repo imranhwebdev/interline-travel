@@ -1353,6 +1353,112 @@ button:focus,
   rotate: -1deg;
 }
 
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+.form-check input {
+  padding: 0;
+  margin-top: -2px;
+  cursor: pointer;
+}
+.form-check .form-check-input:checked[type=checkbox] {
+  background-image: url("../img/checkbx.png");
+  background-color: #FDFE02;
+}
+
+.payment-box {
+  border-radius: 24px;
+  padding: 32px;
+}
+.payment-box .form-check {
+  margin-top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.payment-box .form-check a {
+  text-decoration: underline !important;
+  color: #fff;
+}
+.payment-box .form-check a:hover {
+  color: #CBCC01;
+}
+.payment-box .form-check-input[type=checkbox] {
+  background: transparent;
+  border-color: rgba(242, 242, 242, 0.7);
+}
+
+.tAmount {
+  background: #181807;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 598px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  padding: 12px 10px;
+  font-size: 12px;
+  color: rgba(242, 242, 242, 0.7);
+  border-radius: 12px;
+}
+.tAmount span {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 500;
+  color: #F2F2F2;
+}
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+  .tAmount span {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tAmount span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tAmount span {
+    font-size: 18px;
+  }
+}
+
+.personal-details-box {
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+}
+.personal-details-box .pd-heading {
+  margin-bottom: 17px;
+}
+.personal-details-box .pd-heading h5 {
+  font-size: 16px;
+}
+
+.pd-single-box {
+  padding: 16px;
+  background: #0D101A;
+  border-radius: 8px;
+  text-align: left;
+}
+.pd-single-box h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.pd-single-box p {
+  font-size: 12px;
+  color: rgba(242, 242, 242, 0.7);
+}
+
+.rowgap-16 {
+  row-gap: 16px;
+}
+
 .chooseDOption {
   gap: 20px;
 }
