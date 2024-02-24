@@ -49,7 +49,7 @@ window.onscroll = function() {
 
 $(function() {
     $('.datepicker').datepicker({
-        todayHighlight: true,
+        todayHighlight: false,
         autoclose: true,
         templates: {
             leftArrow: '<i class="fa fa-angle-left"></i>',
