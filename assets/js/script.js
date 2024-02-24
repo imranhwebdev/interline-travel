@@ -48,7 +48,7 @@ window.onscroll = function() {
 
 
 $(function() {
-    $('#datepicker').datepicker({
+    $('.datepicker').datepicker({
         todayHighlight: true,
         autoclose: true,
         templates: {
