@@ -248,3 +248,30 @@
         display: none;
     }
 }
+
+// nav & tabs
+.nav {
+    &-pills {
+        --bs-nav-link-padding-y: 8px;
+        --bs-nav-link-padding-x: 20px;
+        --bs-nav-link-font-weight: 500;
+        --bs-nav-link-font-size: 14px;
+        background-color: $_0D101A;
+        width: max-content;
+        margin: auto;
+        border-radius: 12px;
+        padding: 4px;
+        & .nav {
+            &-link {
+                color: $white;
+                background-color: transparent !important;
+                border: 1px solid #303238;
+                border-radius: 12px;
+                &.active {
+                    color: $primary;
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+}

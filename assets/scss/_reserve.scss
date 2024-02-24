@@ -1,33 +1,37 @@
-.modal-dialog{
+.modal-dialog {
     max-width: 558px !important;
-    .modal-content{
-        background: #0D101A !important;
-        border: 1px solid #303238;
-        padding: 32px;
-        .modal-header{
-            border-color:#303238 !important;
+    & .modal {
+        &-content {
+            background: #0D101A !important;
+            border: 1px solid #303238;
+            padding: 32px;
+            --bs-modal-border-radius: 24px;
         }
-        .modal-body{
-            padding:0 !important;
-            & h4{
+        &-header {
+            border-color: #303238 !important;
+        }
+        &-body {
+            padding: 0 !important;
+            & h4 {
                 font-size: 26px;
                 margin-top: 20px;
                 margin-bottom: 12px;
                 color: $white;
             }
-            & h5{
+            & h5 {
                 font-size: 20px;
                 color: $F2F2F2;
                 margin-bottom: 12px;
             }
-            & p{
+            & p {
                 font-size: 18px;
                 font-weight: 500;
                 color: $F2F2F2B2_70;
             }
-            & figure img{
+            & figure img {
                 border-radius: 24px;
                 max-width: 494px;
+                width: 100%;
             }
         }
     }
@@ -37,6 +41,7 @@
     padding-right: 8px;
     rotate: -1deg;
 }
+
 .form-check {
     display: flex;
     align-items: center;
@@ -53,74 +58,110 @@
         background-color: #FDFE02;
     }
 }
-.payment-box{
+
+.payment-box {
     border-radius: 24px;
     padding: 32px;
-    .form-check{
+    @include md {
+        padding: 1.5rem;
+    }
+    @include sm {
+        padding: 20px;
+    }
+    & .form-check {
         margin-top: 32px;
         font-size: 14px;
         font-weight: 500;
         cursor: pointer;
-        a{
+        a {
             text-decoration: underline !important;
             color: $white;
-            &:hover{
+            &:hover {
                 color: $primary;
             }
         }
+        &-input[type=checkbox] {
+            background: transparent;
+            border-color: $F2F2F2B2_70;
+            ;
+        }
     }
-    .form-check-input[type=checkbox] {
-        background: transparent;
-        border-color:$F2F2F2B2_70; ;
+    & .nav {
+        &-link {
+            min-width: 210px;
+            @include md {
+                min-width: 170px;
+            }
+            @include sm {
+                min-width: 130px;
+            }
+        }
     }
 }
-.tAmount{
-    background:#181807 ;
+
+.tAmount {
+    background: #181807;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     max-width: 598px;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin: 35px 0;
     padding: 12px 10px;
     font-size: 12px;
     color: $F2F2F2B2_70;
     border-radius: 12px;
-    span{
+    @include sm {
+        margin: 24px 0
+    }
+    span {
         @include font-24;
         font-weight: 500;
         color: $F2F2F2;
     }
 }
 
-.personal-details-box{
+.personal-details-box {
     padding: 20px;
     margin-bottom: 24px;
     border-radius: 16px;
-    .pd-heading{
+    .pd-heading {
         margin-bottom: 17px;
-        h5{
+        h5 {
             font-size: 16px;
+        }
+        & button,
+        & .edit {
+            --width: 28px;
+            width: var(--width);
+            height: var(--width);
+            border-radius: 100%;
+            background-color: $_0D101A;
+            color: $white;
+            font-size: 10px;
+            &:hover {
+                background-color: $primary;
+                color: $black;
+            }
         }
     }
 }
 
-.pd-single-box{
+.pd-single-box {
     padding: 16px;
     background: #0D101A;
     border-radius: 8px;
     text-align: left;
-    h5{
+    h5 {
         font-size: 14px;
         font-weight: 500;
     }
-    p{
+    p {
         font-size: 12px;
         color: $F2F2F2B2_70;
     }
 }
 
-.rowgap-16{
+.rowgap-16 {
     row-gap: 16px;
 }

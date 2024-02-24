@@ -6,6 +6,9 @@ body {
   color: #F2F2F2;
   background-color: #000000;
   font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -520,6 +523,29 @@ button:focus,
 }
 .iti > input {
   display: none;
+}
+
+.nav-pills {
+  --bs-nav-link-padding-y: 8px;
+  --bs-nav-link-padding-x: 20px;
+  --bs-nav-link-font-weight: 500;
+  --bs-nav-link-font-size: 14px;
+  background-color: #0D101A;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  border-radius: 12px;
+  padding: 4px;
+}
+.nav-pills .nav-link {
+  color: #fff;
+  background-color: transparent !important;
+  border: 1px solid #303238;
+  border-radius: 12px;
+}
+.nav-pills .nav-link.active {
+  color: #CBCC01;
+  border-color: #CBCC01;
 }
 
 .header {
@@ -1157,10 +1183,9 @@ button:focus,
 }
 .hero__area .input-group-append {
   position: absolute;
-  right: 0;
+  right: 22px;
   top: 50%;
   transform: translateY(-50%);
-  width: 38px;
 }
 .hero__content_inner {
   padding: 24px;
@@ -1286,6 +1311,7 @@ button:focus,
 }
 
 .footer {
+  margin-top: auto;
   padding: 20px 0;
   background: #CBCC01;
   font-size: 18px;
@@ -1320,32 +1346,34 @@ button:focus,
   background: #0D101A !important;
   border: 1px solid #303238;
   padding: 32px;
+  --bs-modal-border-radius: 24px;
 }
-.modal-dialog .modal-content .modal-header {
+.modal-dialog .modal-header {
   border-color: #303238 !important;
 }
-.modal-dialog .modal-content .modal-body {
+.modal-dialog .modal-body {
   padding: 0 !important;
 }
-.modal-dialog .modal-content .modal-body h4 {
+.modal-dialog .modal-body h4 {
   font-size: 26px;
   margin-top: 20px;
   margin-bottom: 12px;
   color: #fff;
 }
-.modal-dialog .modal-content .modal-body h5 {
+.modal-dialog .modal-body h5 {
   font-size: 20px;
   color: #F2F2F2;
   margin-bottom: 12px;
 }
-.modal-dialog .modal-content .modal-body p {
+.modal-dialog .modal-body p {
   font-size: 18px;
   font-weight: 500;
   color: rgba(242, 242, 242, 0.7);
 }
-.modal-dialog .modal-content .modal-body figure img {
+.modal-dialog .modal-body figure img {
   border-radius: 24px;
   max-width: 494px;
+  width: 100%;
 }
 
 .multiBtns i {
@@ -1374,6 +1402,16 @@ button:focus,
   border-radius: 24px;
   padding: 32px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .payment-box {
+    padding: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .payment-box {
+    padding: 20px;
+  }
+}
 .payment-box .form-check {
   margin-top: 32px;
   font-size: 14px;
@@ -1391,6 +1429,19 @@ button:focus,
   background: transparent;
   border-color: rgba(242, 242, 242, 0.7);
 }
+.payment-box .nav-link {
+  min-width: 210px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .payment-box .nav-link {
+    min-width: 170px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .payment-box .nav-link {
+    min-width: 130px;
+  }
+}
 
 .tAmount {
   background: #181807;
@@ -1399,12 +1450,16 @@ button:focus,
   align-items: center;
   gap: 10px;
   max-width: 598px;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin: 35px 0;
   padding: 12px 10px;
   font-size: 12px;
   color: rgba(242, 242, 242, 0.7);
   border-radius: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .tAmount {
+    margin: 24px 0;
+  }
 }
 .tAmount span {
   font-size: 24px;
@@ -1438,6 +1493,19 @@ button:focus,
 }
 .personal-details-box .pd-heading h5 {
   font-size: 16px;
+}
+.personal-details-box .pd-heading button, .personal-details-box .pd-heading .edit {
+  --width: 28px;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background-color: #0D101A;
+  color: #fff;
+  font-size: 10px;
+}
+.personal-details-box .pd-heading button:hover, .personal-details-box .pd-heading .edit:hover {
+  background-color: #CBCC01;
+  color: #000000;
 }
 
 .pd-single-box {

@@ -13,8 +13,16 @@
     <!-- Fonts -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap DatePicker CSS -->
+    <link rel="stylesheet" href="assets/plugins/datepicker/datepicker.min.css">
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/fontawesome.all.min.css">
+    <!-- inTelInput CSS -->
+    <link rel="stylesheet" href="assets/plugins/intl-tel/css/intlTelInput.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="assets/plugins/select2/select2.min.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="assets/plugins/carousel/swiper-bundle.min.css" />
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -53,16 +61,16 @@
     </header>
     <section class="pageTop">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <div class="backDetails d-flex align-items-center gap-2 gap-md-4 justify-content-center justify-content-sm-start mb-4 mb-sm-0">
-                        <a href="service-details.html" class="backBtn"><i class="fas fa-arrow-left"></i></a>
-                        <h4>Details</h4>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="multiBtns d-flex align-items-center justify-content-center justify-content-sm-end gap-3">
-                        <a href="#" class="inlineBtn"><i class="fas fa-phone-alt"></i> contact</a>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="d-flex align-items-center flex-wrap justify-content-between gap-3">
+                        <div class="backDetails d-flex align-items-center gap-2 gap-md-4 justify-content-center justify-content-sm-start">
+                            <a href="diningOptions.html" class="backBtn"><i class="fas fa-arrow-left"></i></a>
+                            <h4>Details</h4>
+                        </div>
+                        <div class="multiBtns d-flex align-items-center justify-content-center justify-content-sm-end gap-3">
+                            <a href="tel:+8801236547892" class="inlineBtn"><i class="fas fa-phone-alt"></i> contact</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,196 +142,195 @@
                             <h4>Your Booking</h4>
 
                             <div class="personal-details-box bg-black mt-4">
-                              <div class="pd-heading d-flex align-items-center justify-content-between">
-                                <h5>Personal Details</h5>
-                                <span class="edit"><i class="fas fa-pen"></i></span>
-                              </div>
-                              <div class="row rowgap-16">
-                                <div class="col">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
+                                <div class="pd-heading d-flex align-items-center justify-content-between">
+                                    <h5>Personal Details</h5>
+                                    <button class="edit d-flex align-items-center rounded-pill justify-content-center p-0 border-0"><i
+                                            class="fas fa-pen"></i></button>
                                 </div>
-                                <div class="col">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                <div class="row rowgap-16">
+                                    <div class="col">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
+                                    <div class="col-sm-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="col-sm-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
 
-                              </div> 
-                            </div>
-                            
-                            <div class="personal-details-box bg-black mt-4">
-                              <div class="pd-heading d-flex align-items-center justify-content-between">
-                                <h5>Personal Details</h5>
-                              </div>
-                              <div class="row rowgap-16">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>dara@magic.com</h5>
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                              </div> 
-                            </div>
-
-                            <div class="personal-details-box bg-black mt-4">
-                              <div class="pd-heading d-flex align-items-center justify-content-between">
-                                <h5>Personal Details</h5>
-                              </div>
-                              <div class="row rowgap-16">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>Balcony</h5>
-                                        <p>Cabin Grade</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>$AUD</h5>
-                                        <p>Cabin Price</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="pd-single-box">
-                                        <h5>2-Bed Outside Cabin with Juliette Balcony</h5>
-                                        <p>Cabin</p>
-                                    </div>
-                                </div>
-                              </div> 
                             </div>
 
                             <div class="personal-details-box bg-black mt-4">
                                 <div class="pd-heading d-flex align-items-center justify-content-between">
-                                  <h5>Additional Details</h5>
+                                    <h5>Personal Details</h5>
                                 </div>
                                 <div class="row rowgap-16">
-                                  <div class="col-lg-3 col-md-6">
-                                      <div class="pd-single-box">
-                                          <h5>8 PM</h5>
-                                          <p>Dining Time</p>
-                                      </div>
-                                  </div>
-                                  <div class="col-lg-3 col-md-6">
-                                      <div class="pd-single-box">
-                                          <h5>Big</h5>
-                                          <p>Table Size</p>
-                                      </div>
-                                  </div>
-                                  <div class="col-lg-3 col-md-6">
-                                      <div class="pd-single-box">
-                                          <h5>Yes</h5>
-                                          <p>Special Requests </p>
-                                      </div>
-                                  </div>
-                                  <div class="col-lg-3 col-md-6">
-                                      <div class="pd-single-box">
-                                          <h5>NO</h5>
-                                          <p>Insurance</p>
-                                      </div>
-                                  </div>
-                                </div> 
-                              </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>dara@magic.com</h5>
+                                            <p>Email</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="personal-details-box bg-black mt-4">
+                                <div class="pd-heading d-flex align-items-center justify-content-between">
+                                    <h5>Personal Details</h5>
+                                </div>
+                                <div class="row rowgap-16">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>Balcony</h5>
+                                            <p>Cabin Grade</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>$AUD</h5>
+                                            <p>Cabin Price</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>2-Bed Outside Cabin with Juliette Balcony</h5>
+                                            <p>Cabin</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="personal-details-box bg-black mt-4">
+                                <div class="pd-heading d-flex align-items-center justify-content-between">
+                                    <h5>Additional Details</h5>
+                                </div>
+                                <div class="row rowgap-16">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>8 PM</h5>
+                                            <p>Dining Time</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>Big</h5>
+                                            <p>Table Size</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>Yes</h5>
+                                            <p>Special Requests </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="pd-single-box">
+                                            <h5>NO</h5>
+                                            <p>Insurance</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <!-- payment box -->
                             <div class="payment-box bg-black">
@@ -331,10 +338,19 @@
                                 <div class="tAmount mx-auto">
                                     Total Amount to Pay <span>$2280.00 AUD</span>
                                 </div>
-                                <div class="btns">
-                                    <a href="#" class="inlineBtn large">By Credit Card</a>
-                                    <a href="#" class="inlineBtn large">By Bank Transfer</a>
-                                </div>
+                                <ul class="nav nav-pills justify-content-center gap-2" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="payment-card-tab" data-bs-toggle="pill" data-bs-target="#payment-card" type="button" role="tab" aria-controls="payment-card" aria-selected="true">By Credit Card</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="payment-bank-tab" data-bs-toggle="pill" data-bs-target="#payment-bank" type="button" role="tab" aria-controls="payment-bank" aria-selected="false">By Bank Transfer</button>
+                                    </li>
+                                </ul>
+                                <!-- <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="payment-card" role="tabpanel" aria-labelledby="payment-card-tab">...</div>
+                                    <div class="tab-pane fade" id="payment-bank" role="tabpanel" aria-labelledby="payment-bank-tab">...</div>
+                                </div> -->
+
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                     <label class="form-check-label" for="invalidCheck">
@@ -385,18 +401,22 @@
 
     <!-- jQuery JS -->
     <script src="assets/js/jquery.min.js"></script>
-
     <!-- Popper JS -->
     <script src="assets/js/popper.min.js"></script>
-
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
-
+    <!-- Datepicker JS -->
+    <script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- inTelInput JS -->
+    <script src="assets/plugins/intl-tel/js/intlTelInput-jquery.min.js"></script>
+    <script src="assets/plugins/countMinMax.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/plugins/carousel/swiper-bundle.min.js"></script>
+    <!-- Select 2 -->
+    <script src="assets/plugins/select2/select2.min.js"></script>
     <!-- Main Script JS -->
     <script src="assets/js/script.js"></script>
 
-    <!-- Main Script JS -->
-    <script src="assets/plugins/countMinMax.js"></script>
 </body>
 
 </html>
