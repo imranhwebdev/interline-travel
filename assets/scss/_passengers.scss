@@ -1,0 +1,15 @@
+.passenger {
+    &-box {
+        padding: 20px;
+        border-radius: 1rem;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &-title {
+        margin-bottom: 20px;
+        & h5 {
+            font-size: 18px;
+        }
+    }
+}

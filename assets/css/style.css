@@ -237,16 +237,8 @@ button:focus,
   color: #fff;
 }
 
-.p-20 {
-  padding: 20px;
-}
-
 .mb-24 {
   margin-bottom: 24px;
-}
-
-.formTitle {
-  margin-bottom: 20px;
 }
 
 .form-icon {
@@ -256,10 +248,42 @@ button:focus,
   right: var(--position);
   transform: translateY(-50%);
   z-index: 2;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 .form-icon.start-0 {
   right: auto;
   left: var(--position) !important;
+}
+.form-label {
+  font-size: 16px;
+  color: #F2F2F2;
+}
+.form-label .text-danger {
+  --bs-danger-rgb: 235, 87, 87;
+}
+.form-control {
+  --padding-y: 10px;
+  --padding-x: 16px;
+  background-color: #0D101A !important;
+  border-color: #4F5255;
+  font-size: 14px;
+  line-height: 1.5714285714;
+  font-weight: 500;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7) !important;
+  border-radius: 8px;
+  height: auto;
+  padding: var(--padding-y) var(--padding-x);
+}
+.form-control:focus {
+  border-color: #CBCC01;
+}
+.form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .select2-container {
@@ -363,6 +387,53 @@ button:focus,
 }
 .datepicker-orient-bottom::after, .datepicker-orient-bottom::before {
   border-bottom-color: #000000 !important;
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color-state: currentColor;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  table-layout: fixed;
+}
+@media only screen and (max-width: 479px) {
+  .table {
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+.table thead tr th {
+  font-size: 12px;
+}
+.table th {
+  --radius: 8px;
+  background: #1B1E19;
+}
+.table th:first-child {
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+.table th:last-child {
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.table td, .table th {
+  padding: 14px 16px;
+}
+@media only screen and (max-width: 767px) {
+  .table td, .table th {
+    padding: 12px 15px;
+  }
+}
+.table td img, .table th img {
+  margin-right: 8px;
+  max-width: 16px;
+}
+.table td i, .table th i {
+  margin-right: 8px;
+  font-size: 14px;
 }
 
 .header {
@@ -482,51 +553,6 @@ button:focus,
   background: #0D101A;
   padding: 20px 16px;
   border-radius: 1rem;
-}
-.serviceDetailsTable .sDTInner table {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 0;
-  table-layout: fixed;
-}
-@media only screen and (max-width: 479px) {
-  .serviceDetailsTable .sDTInner table {
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
-.serviceDetailsTable .sDTInner table .table > thead tr th {
-  border: 0;
-  font-size: 12px;
-}
-.serviceDetailsTable .sDTInner table th {
-  --radius: 8px;
-  background: #1B1E19;
-}
-.serviceDetailsTable .sDTInner table th:first-child {
-  border-top-left-radius: var(--radius);
-  border-bottom-left-radius: var(--radius);
-}
-.serviceDetailsTable .sDTInner table th:last-child {
-  border-top-right-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-}
-.serviceDetailsTable .sDTInner table td, .serviceDetailsTable .sDTInner table th {
-  padding: 14px 16px;
-}
-@media only screen and (max-width: 767px) {
-  .serviceDetailsTable .sDTInner table td, .serviceDetailsTable .sDTInner table th {
-    padding: 12px 15px;
-  }
-}
-.serviceDetailsTable .sDTInner table td img, .serviceDetailsTable .sDTInner table th img {
-  margin-right: 8px;
-  max-width: 16px;
-}
-.serviceDetailsTable .sDTInner table td i, .serviceDetailsTable .sDTInner table th i {
-  margin-right: 8px;
-  font-size: 14px;
 }
 
 .serviceDetailsTable .sDTInner table tr {
@@ -844,14 +870,6 @@ button:focus,
   border-radius: 8px;
   max-width: 221px;
   width: 100%;
-}
-
-/*=========================================
-========== PassengerForm Area Css =========
-===========================================*/
-.passengerForm-box {
-  background: #000000;
-  border-radius: 16px;
 }
 
 .service-card {
@@ -1188,6 +1206,20 @@ button:focus,
   .footer {
     font-size: 16px;
   }
+}
+
+.passenger-box {
+  padding: 20px;
+  border-radius: 1rem;
+}
+.passenger-box:not(:last-child) {
+  margin-bottom: 20px;
+}
+.passenger-title {
+  margin-bottom: 20px;
+}
+.passenger-title h5 {
+  font-size: 18px;
 }
 
 .modal-dialog {

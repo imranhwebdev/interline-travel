@@ -220,16 +220,8 @@ button:focus,
     }
 }
 
-.p-20 {
-    padding: 20px;
-}
-
 .mb-24 {
     margin-bottom: 24px;
-}
-
-.formTitle {
-    margin-bottom: 20px;
 }
 
 .form {
@@ -240,9 +232,38 @@ button:focus,
         right: var(--position);
         transform: translateY(-50%);
         z-index: 2;
+        font-size: 1rem;
+        color: rgba($color: $white, $alpha: .70);
         &.start-0 {
             right: auto;
             left: var(--position) !important;
+        }
+    }
+    &-label {
+        font-size: 16px;
+        color: $F2F2F2;
+        & .text-danger {
+            --bs-danger-rgb: 235, 87, 87;
+        }
+    }
+    &-control {
+        --padding-y: 10px;
+        --padding-x: 16px;
+        background-color: $_0D101A !important;
+        border-color: $_4F5255;
+        font-size: 14px;
+        line-height: calc(22px / 14px);
+        font-weight: 500;
+        font-style: italic;
+        color: rgba($color: $white, $alpha: .70) !important;
+        border-radius: 8px;
+        height: auto;
+        padding: var(--padding-y) var(--padding-x);
+        &:focus {
+            border-color: $primary;
+        }
+        &::placeholder {
+            color: rgba($color: $white, $alpha: .70) !important;
         }
     }
 }
