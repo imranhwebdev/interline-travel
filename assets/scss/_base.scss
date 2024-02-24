@@ -252,13 +252,17 @@ button:focus,
         background-color: $_0D101A !important;
         border-color: $_4F5255;
         font-size: 12px;
-        line-height: calc(22px / 14px);
+        line-height: calc(22px / 12px);
         font-weight: 500;
         font-style: italic;
         color: rgba($color: $white, $alpha: .70) !important;
         border-radius: 8px;
         height: auto;
         padding: var(--padding-y) var(--padding-x);
+        @include sm {
+            --padding-y: 8px;
+            --padding-x: 14px;
+        }
         &:focus {
             border-color: $primary;
         }

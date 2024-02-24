@@ -4,7 +4,6 @@ jQuery(function($) {
     // Initialize Select2 on your select element
     $('select').select2();
 
-
 });
 // Fetch the list of countries from an API
 $.ajax({

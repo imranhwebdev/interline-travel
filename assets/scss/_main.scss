@@ -268,8 +268,11 @@
             --padding-top: 24px;
             padding: var(--padding);
             padding-top: var(--padding-top);
-            @include sm {
+            @include md {
                 --padding: 24px;
+            }
+            @include sm {
+                --padding: 20px;
                 --padding-top: 18px;
             }
         }

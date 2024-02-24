@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- inTelInput CSS -->
+    <link rel="stylesheet" href="assets/plugins/intl-tel/css/intlTelInput.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -147,7 +149,7 @@
                                     <h6 class="fw-medium">Lead Passenger</h6>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">First Name <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -156,7 +158,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Surname <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -165,7 +167,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Email <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -174,16 +176,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Phone <span class="text-danger">*</span></label>
-                                            <div class="position-relative">
-                                                <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
-                                                <input type="email" class="form-control" placeholder="+1" required>
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <input type="tel" class="form-control" id="phone" placeholder="+1">
+                                                </div>
+                                                <div class="position-relative flex-grow-1">
+                                                    <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
+                                                    <input type="email" class="form-control" placeholder="+1" required>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Date of Birth <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -192,7 +199,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Nationality <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -201,7 +208,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Address <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -214,7 +221,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Suburb <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -227,7 +234,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">State <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -240,7 +247,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Postcode <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -260,7 +267,7 @@
                                     <h6 class="fw-medium">Lead Passenger 2</h6>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">First Name <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -269,7 +276,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Surname <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -278,7 +285,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Email <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -287,16 +294,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Phone <span class="text-danger">*</span></label>
-                                            <div class="position-relative">
-                                                <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
-                                                <input type="email" class="form-control" placeholder="+1" required>
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <input type="tel" class="form-control" id="phone2" placeholder="+1">
+                                                </div>
+                                                <div class="position-relative flex-grow-1">
+                                                    <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
+                                                    <input type="email" class="form-control" placeholder="+1" required>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Date of Birth <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -305,7 +317,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Nationality <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -314,7 +326,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Address <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -327,7 +339,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Suburb <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -340,7 +352,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">State <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -353,7 +365,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Postcode <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -368,13 +380,12 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="passenger-box bg-black">
                                 <div class="passenger-title">
                                     <h6 class="fw-medium">Lead Passenger 3</h6>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">First Name <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -383,7 +394,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Surname <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -392,7 +403,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Email <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -401,16 +412,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Phone <span class="text-danger">*</span></label>
-                                            <div class="position-relative">
-                                                <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
-                                                <input type="email" class="form-control" placeholder="+1" required>
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <input type="tel" class="form-control" id="phone3" placeholder="+1">
+                                                </div>
+                                                <div class="position-relative flex-grow-1">
+                                                    <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
+                                                    <input type="email" class="form-control" placeholder="+1" required>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Date of Birth <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -419,7 +435,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Nationality <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -428,7 +444,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Address <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -441,7 +457,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Suburb <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -454,7 +470,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">State <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -467,7 +483,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Postcode <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -488,7 +504,7 @@
                                     <h6 class="fw-medium">Lead Passenger 4</h6>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">First Name <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -497,7 +513,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Surname <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -506,7 +522,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Email <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -515,16 +531,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Phone <span class="text-danger">*</span></label>
-                                            <div class="position-relative">
-                                                <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
-                                                <input type="email" class="form-control" placeholder="+1" required>
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <input type="tel" class="form-control" id="phone4" placeholder="+1">
+                                                </div>
+                                                <div class="position-relative flex-grow-1">
+                                                    <label for="#" class="form-icon"><i class="fa fa-phone-alt"></i></label>
+                                                    <input type="email" class="form-control" placeholder="+1" required>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Date of Birth <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -533,7 +554,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-12 col-sm-6 col-lg-4">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Nationality <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -542,7 +563,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Address <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -555,7 +576,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Suburb <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -568,7 +589,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">State <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -581,7 +602,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="form-box mb-3">
                                             <label for="#" class="form-label fw-medium lh-base">Postcode <span class="text-danger">*</span></label>
                                             <div class="position-relative">
@@ -624,21 +645,53 @@
 
     <!-- jQuery JS -->
     <script src="assets/js/jquery.min.js"></script>
-
     <!-- Popper JS -->
     <script src="assets/js/popper.min.js"></script>
-
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Main Script JS -->
-    <script src="assets/js/script.js"></script>
-
     <!-- Datepicker JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
+    <!-- inTelInput JS -->
+    <script src="assets/plugins/intl-tel/js/intlTelInput-jquery.min.js"></script>
     <!-- Main Script JS -->
     <script src="assets/plugins/countMinMax.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        var options = {
+            allowDropdown: true,
+            autoInsertDialCode: false,
+            autoPlaceholder: "+1",
+            countrySearch: true,
+            containerClass: "",
+            customPlaceholder: null,
+            defaultToFirstCountry: true,
+            dropdownContainer: null,
+            excludeCountries: [],
+            fixDropdownWidth: true,
+            formatAsYouType: true,
+            formatOnDisplay: true,
+            geoIpLookup: null,
+            hiddenInput: null,
+            i18n: {},
+            initialCountry: "",
+            nationalMode: true,
+            onlyCountries: [],
+            placeholderNumberType: "MOBILE",
+            preferredCountries: [],
+            showFlags: false,
+            showSelectedDialCode: false,
+            initialCountry: "us",
+        };
+        var input = document.querySelector("#phone");
+        var input2 = document.querySelector("#phone2");
+        var input3 = document.querySelector("#phone3");
+        var input4 = document.querySelector("#phone4");
+        window.intlTelInput(input, options);
+        window.intlTelInput(input2, options);
+        window.intlTelInput(input3, options);
+        window.intlTelInput(input4, options);
+    </script>
 </body>
 
 </html>
