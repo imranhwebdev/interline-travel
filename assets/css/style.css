@@ -1327,9 +1327,15 @@ button:focus,
 }
 
 .privacy-policy {
-  padding-top: 39px;
+  --padding-y: 40px;
+  padding: var(--padding-y) 0;
   max-width: 460px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .privacy-policy {
+    --padding: 30px;
+  }
 }
 .privacy-policy figure {
   margin-top: 16px;
