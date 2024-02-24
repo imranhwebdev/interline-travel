@@ -248,7 +248,7 @@ button:focus,
   right: var(--position);
   transform: translateY(-50%);
   z-index: 2;
-  font-size: 1rem;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
 }
 .form-icon.start-0 {
@@ -256,7 +256,7 @@ button:focus,
   left: var(--position) !important;
 }
 .form-label {
-  font-size: 16px;
+  font-size: 14px;
   color: #F2F2F2;
 }
 .form-label .text-danger {
@@ -267,7 +267,7 @@ button:focus,
   --padding-x: 16px;
   background-color: #0D101A !important;
   border-color: #4F5255;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5714285714;
   font-weight: 500;
   font-style: italic;
@@ -346,7 +346,7 @@ button:focus,
   border-radius: 12px;
 }
 .datepicker td, .datepicker th {
-  --width: 36px;
+  --width: 34px;
   width: var(--width);
   height: var(--width);
   color: rgba(242, 242, 242, 0.8);

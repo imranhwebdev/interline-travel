@@ -232,7 +232,7 @@ button:focus,
         right: var(--position);
         transform: translateY(-50%);
         z-index: 2;
-        font-size: 1rem;
+        font-size: 14px;
         color: rgba($color: $white, $alpha: .70);
         &.start-0 {
             right: auto;
@@ -240,7 +240,7 @@ button:focus,
         }
     }
     &-label {
-        font-size: 16px;
+        font-size: 14px;
         color: $F2F2F2;
         & .text-danger {
             --bs-danger-rgb: 235, 87, 87;
@@ -251,7 +251,7 @@ button:focus,
         --padding-x: 16px;
         background-color: $_0D101A !important;
         border-color: $_4F5255;
-        font-size: 14px;
+        font-size: 12px;
         line-height: calc(22px / 14px);
         font-weight: 500;
         font-style: italic;
